@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="858px"
+    android:layout_height="1170px"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="450px"
+        android:layout_height="450px"
+        android:layout_marginTop="181px"
+        android:scaleType="centerInside"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_animation_fault" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/nptv_auth_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/auth_fail"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="141px"
+        android:textSize="50px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="133px"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:textSize="38px"
+            android:textColor="@color/black"
+            android:text="重新扫描（10）"
+            tools:visibility="gone"
+            android:gravity="center"
+            android:layout_marginLeft="150px"
+            android:layout_marginRight="150px"
+            android:background="@drawable/sec_btn_theme_bg" />
+
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:textSize="38px"
+            android:textColor="@color/black"
+            android:text="@string/repeat"
+            android:gravity="center"
+            android:background="@drawable/sec_btn_theme_bg"
+            android:visibility="gone"/>
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:layout_width="230px"
+            android:layout_height="75px"
+            android:textSize="38px"
+            android:textColor="@color/black"
+            android:paddingLeft="50px"
+            android:text="30s"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:background="@mipmap/ic_cutdown_time_bg" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

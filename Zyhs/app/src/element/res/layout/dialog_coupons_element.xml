@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="885px"
+    android:layout_height="1447px"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="190px"
+    android:layout_marginBottom="283px"
+    android:background="@mipmap/coupons_element_bg">
+
+    <ImageView
+        android:id="@+id/iv_coupons_element_code"
+        android:layout_width="257px"
+        android:layout_height="255px"
+        android:layout_marginTop="824px"
+        android:layout_marginBottom="366px"
+        android:src="@mipmap/coupons_element_code"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_throw_coupons_element"
+        android:layout_width="734px"
+        android:layout_height="114px"
+        android:layout_marginBottom="92px"
+        android:background="@drawable/sec_btn_theme_bg"
+        android:gravity="center"
+        android:text="我已领取（45）"
+        android:textColor="@color/tv_theme_color"
+        android:textSize="38px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

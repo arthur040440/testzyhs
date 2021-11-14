@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:customAttr="http://schemas.android.com/tools"
+    android:layout_width="877px"
+    android:layout_height="1296px"
+    android:layout_marginLeft="101px"
+    android:layout_marginTop="314px"
+    android:layout_marginRight="102px"
+    android:layout_marginBottom="310px"
+    android:background="@mipmap/coupons_yintai_bg">
+
+    <!--<com.zhangyuhuishou.zyhs.barrage.BarrageView-->
+        <!--android:id="@+id/barrageview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="200px"-->
+        <!--android:layout_marginTop="120px"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_yintai_yiliao_tips"-->
+        <!--android:layout_width="750px"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="300px"-->
+        <!--android:gravity="center"-->
+        <!--android:lineSpacingMultiplier="1.5"-->
+        <!--android:maxLines="2"-->
+        <!--android:text="@string/yintai_yiliao_text_8"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="60sp"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+
+    <ImageView
+        android:id="@+id/iv_coupons_yintai_code"
+        android:layout_width="220px"
+        android:layout_height="220px"
+        android:layout_marginLeft="329px"
+        android:layout_marginTop="739px"
+        android:layout_marginRight="328px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_throw_yintai_receive"
+        android:layout_width="734px"
+        android:layout_height="114px"
+        android:layout_marginLeft="72px"
+        android:layout_marginRight="71px"
+        android:layout_marginBottom="65px"
+        android:background="@drawable/sec_btn_theme_bg"
+        android:gravity="center"
+        android:text="我已领取（45）"
+        android:textColor="@color/white"
+        android:textSize="38px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        />
+
+</android.support.constraint.ConstraintLayout>

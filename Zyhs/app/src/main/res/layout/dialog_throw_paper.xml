@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/dialog_throw">
+
+    <ImageView
+        android:id="@+id/iv_newspaper"
+        android:layout_width="96px"
+        android:layout_height="96px"
+        android:layout_marginLeft="136px"
+        android:layout_marginTop="457px"
+        android:src="@mipmap/ic_type_paper1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="158px"
+        android:layout_marginTop="20px"
+        android:text="@string/newspaper"
+        android:textColor="@color/black"
+        android:textSize="24px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_newspaper" />
+
+    <ImageView
+        android:id="@+id/iv_books_and_magazines"
+        android:layout_width="98px"
+        android:layout_height="95px"
+        android:src="@mipmap/ic_type_paper2"
+        app:layout_constraintBottom_toBottomOf="@id/iv_newspaper"
+        android:layout_marginLeft="294px"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:text="@string/books_and_magazines"
+        android:textColor="@color/black"
+        android:textSize="24px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="297px"
+        app:layout_constraintTop_toBottomOf="@id/iv_books_and_magazines" />
+
+    <ImageView
+        android:id="@+id/iv_office_paper"
+        android:layout_width="89px"
+        android:layout_height="95px"
+        android:layout_marginRight="301px"
+        android:src="@mipmap/ic_type_paper3"
+        app:layout_constraintBottom_toBottomOf="@id/iv_newspaper"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:layout_marginRight="298px"
+        android:text="@string/office_paper"
+        android:textColor="@color/black"
+        android:textSize="24px"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_office_paper" />
+
+    <ImageView
+        android:id="@+id/iv_carton"
+        android:layout_width="128px"
+        android:layout_height="77px"
+        android:layout_marginRight="118px"
+        android:src="@mipmap/ic_type_paper4"
+        app:layout_constraintBottom_toBottomOf="@id/iv_newspaper"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:layout_marginRight="160px"
+        android:text="@string/carton"
+        android:textColor="@color/black"
+        android:textSize="24px"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_carton" />
+
+</merge>

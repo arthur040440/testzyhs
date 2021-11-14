@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="858px"
+    android:layout_height="1170px"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical">
+
+    <com.tlh.android.widget.ImageTextButton
+        android:id="@+id/itb_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_logo_top"
+        android:layout_marginLeft="141px"
+        android:layout_marginRight="141px"
+        android:layout_marginTop="143px"
+        android:gravity="center_horizontal"
+        android:text="@string/door_is_open_throw_it"
+        android:textColor="@color/black"
+        android:textSize="38px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        custom:leftDrawable="@mipmap/ic_left_fish"
+        custom:rightDrawable="@mipmap/ic_right_fish" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_throw_tip"
+        android:layout_width="197px"
+        android:layout_height="54px"
+        android:layout_marginTop="281px"
+        android:background="@drawable/sec_btn_theme_bg"
+        android:gravity="center"
+        android:text="@string/deliverable_items"
+        android:textColor="@color/black"
+        android:textSize="30px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/include_plastic_bottle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include layout="@layout/dialog_throw_plastic_bottle" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/include_glass_bottle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include layout="@layout/dialog_throw_glass_bottle" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/include_paper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include layout="@layout/dialog_throw_paper" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/include_spin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include layout="@layout/dialog_throw_spin" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/include_metal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include layout="@layout/dialog_throw_metal" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/include_plastic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include layout="@layout/dialog_throw_plastic" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/include_poison"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include layout="@layout/dialog_throw_poison" />
+    </android.support.constraint.ConstraintLayout>
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/iv_gif_close"
+        android:layout_width="505px"
+        android:layout_height="384px"
+        android:layout_gravity="center"
+        android:layout_marginTop="351px"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_animation_close_door"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/tv_tip">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/ll_throw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="41px"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@id/tv_tip"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <com.tlh.android.widget.NoPaddingTextView
+                android:id="@+id/tv_has_throw_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10px"
+                android:layout_marginRight="20px"
+                android:text="已投递"
+                android:textColor="@color/black"
+                android:textSize="40px"
+                app:layout_constraintBottom_toBottomOf="@id/tv_num"
+                app:layout_constraintRight_toLeftOf="@id/tv_num" />
+
+            <com.tlh.android.widget.NoPaddingTextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/theme_color"
+                android:textSize="70px"
+                app:layout_constraintLeft_toLeftOf="@id/tv_has_throw_des"
+                app:layout_constraintRight_toLeftOf="@id/tv_unit"
+                tools:text="0" />
+
+            <com.tlh.android.widget.NoPaddingTextView
+                android:id="@+id/tv_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="300px"
+                android:text="个"
+                android:textColor="@color/black"
+                android:textSize="40px"
+                app:layout_constraintBottom_toBottomOf="@id/tv_num"
+                app:layout_constraintLeft_toRightOf="@id/tv_num" />
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="93px"
+        android:gravity="center"
+        android:textColor="@color/red"
+        android:textSize="32px"
+        app:layout_constraintBottom_toTopOf="@id/tv_throw_finish"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:text="物品过重" />
+
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_throw_finish"
+        android:layout_width="match_parent"
+        android:layout_height="114px"
+        android:layout_marginBottom="102px"
+        android:layout_marginLeft="62px"
+        android:layout_marginRight="62px"
+        android:background="@drawable/sec_btn_theme_bg"
+        android:gravity="center"
+        android:text="结束本次投递"
+        android:textColor="@color/tv_theme_color"
+        android:textSize="38px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:visibility="visible" />
+
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_throw_ok"
+        android:layout_width="230px"
+        android:layout_height="75px"
+        android:layout_gravity="center"
+        android:layout_marginBottom="100px"
+        android:layout_marginTop="123px"
+        android:background="@mipmap/ic_cutdown_time_bg"
+        android:gravity="center"
+        android:paddingLeft="50px"
+        android:textColor="@color/black"
+        android:textSize="38px"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:text="7s" />
+
+</android.support.constraint.ConstraintLayout>
+
+

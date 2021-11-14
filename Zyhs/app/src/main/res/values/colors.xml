@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="regular">#ADA9A9</color>
+    <color name="black_home_page_tip">#676566</color>
+    <color name="black_171717">#FF171717</color>
+    <color name="black_222222">#222222</color>
+    <color name="black_575757">#575757</color>
+    <color name="gray_878787">#878787</color>
+    <color name="red">#FF3838</color>
+    <color name="trans_black_15">#15000000</color>
+    <color name="dark_black">#434343</color>
+    <color name="tip_red">#FF0101</color>
+    <color name="thumb_shape">#e8e7e7</color>
+    <color name="top_border">#E5E5E5</color>
+    <color name="track_bg">#adadad</color>
+    <color name="customer_service">#878787</color>
+    <color name="face_color_bg">#2F2F33</color>
+    <color name="nick_color">#FF030000</color>
+    <color name="two_fish_color">#010101</color>
+    <color name="phone_num_underline">#FFFFFF</color>
+    <color name="phone_num_underline_press">#434343</color>
+    <color name="tv_coupons_color">#FF5fe8ff</color>
+    <color name="sb_background">#999999</color>
+    <color name="maintain_form_second">#333333</color>
+    <color name="sb_checked_color">#FFE123</color>
+    <color name="tv_theme_color">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="grgray">#686868</color>
+
+
+
+    <!--主题颜色设置-->
+    <!--章鱼主题色start #FFffc600（#f0bb04）-->
+    <color name="theme_color">#FFffc600</color>
+    <color name="face_color_round">#A0ffc600</color>
+    <color name="face_color_ring">#FFffc600</color>
+    <color name="colorAccent">#FFffc600</color>
+    <color name="theme_color_press">#f0bb04</color>
+    <color name="track_bg_check">#50ffc600</color>
+    <color name="tv_coupons_prompt">#FDAD02</color>
+    <!--章鱼主题色end-->
+
+</resources>

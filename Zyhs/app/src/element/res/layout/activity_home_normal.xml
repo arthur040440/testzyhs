@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.tlh.android.widget.ImageTextButton
+        android:id="@+id/ll_welcome_use"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="252px"
+        android:layout_marginTop="241px"
+        android:layout_marginRight="252px"
+        android:gravity="center"
+        android:text="@string/welcome_to_use_octopus_recovery"
+        android:textColor="@color/black"
+        android:textSize="38px"
+        app:layout_constraintTop_toBottomOf="@id/iv_logo_top"
+        custom:leftDrawable="@mipmap/ic_left_fish"
+        custom:rightDrawable="@mipmap/ic_right_fish" />
+
+    <ImageView
+        android:id="@+id/iv_qr"
+        android:layout_width="307px"
+        android:layout_height="308px"
+        android:layout_marginTop="131px"
+        android:background="@mipmap/ic_qr_border"
+        android:scaleType="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ll_welcome_use" />
+
+    <com.tlh.android.widget.CircularLinesProgress
+        android:id="@+id/clp"
+        android:layout_width="98px"
+        android:layout_height="98px"
+        android:layout_gravity="center"
+        android:layout_marginTop="240px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ll_welcome_use" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_scan_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_qr"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75px"
+        android:text="@string/please_scan_qr_code"
+        android:textColor="@color/black"
+        android:textSize="38px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_qr" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70px"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/go_to_face_auth"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:src="@mipmap/ic_logo_zfb" />
+
+        <ImageView
+            android:layout_marginLeft="27px"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:src="@mipmap/ic_logo_zyhs" />
+    </LinearLayout>
+
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/go_to_face_auth"
+        android:layout_width="734px"
+        android:layout_height="114px"
+        android:layout_below="@id/tv_scan_tip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="184px"
+        android:background="@drawable/sec_btn_theme_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/face_recognition_and_login"
+        android:textColor="@color/tv_theme_color"
+        android:textSize="38px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_scan_tip" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120px"
+        android:drawableLeft="@mipmap/ic_home_guide"
+        android:drawablePadding="15px"
+        android:gravity="center"
+        android:text="@string/go_to_guide"
+        android:textColor="@color/black"
+        android:textSize="38px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/go_to_face_auth" />
+
+</android.support.constraint.ConstraintLayout>

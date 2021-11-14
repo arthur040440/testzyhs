@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--河马主题色start #FF5fe8ff （#5ad4e9）-->
+    <color name="theme_color">#FF5fe8ff</color>
+    <color name="face_color_round">#A05fe8ff</color>
+    <color name="face_color_ring">#FF5fe8ff</color>
+    <color name="colorAccent">#FF5fe8ff</color>
+    <color name="theme_color_press">#5ad4e9</color>
+    <color name="track_bg_check">#505fe8ff</color>
+    <color name="sb_checked_color">#FF5fe8ff</color>
+    <!--河马主题色end-->
+</resources>

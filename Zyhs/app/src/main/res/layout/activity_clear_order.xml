@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_screen_other_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66px"
+        android:layout_marginTop="7px"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_clear_user_logo"
+            android:layout_width="66px"
+            android:layout_height="66px"
+            android:layout_marginLeft="41px"
+            android:adjustViewBounds="true"
+            android:background="@mipmap/ic_user_fault_logo"
+            android:scaleType="fitXY" />
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:id="@+id/tv_clear_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="17px"
+            android:text="章鱼游客"
+            android:textColor="@color/nick_color"
+            android:textSize="22px" />
+
+        <ImageView
+            android:layout_width="27px"
+            android:layout_height="27px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20px"
+            android:background="@mipmap/ic_img_coin" />
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:id="@+id/tv_clear_user_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8px"
+            android:textColor="#FF030000"
+            android:textSize="20px" />
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:id="@+id/time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18px"
+            android:layout_marginRight="40px"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="@color/black"
+            android:textSize="20px"
+            tools:text="NO.Zwefiuhsdiugd" />
+    </LinearLayout>
+
+    <include layout="@layout/page_head_logo" />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/lr_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="87px"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/iv_logo_top">
+
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120px"
+            android:text="品类"
+            android:textColor="@color/black"
+            android:textSize="38px"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_receivable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="应收"
+            android:textColor="@color/black"
+            android:textSize="38px"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="89px"
+            android:text="仓门开关"
+            android:textColor="@color/black"
+            android:textSize="38px"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ListView
+        android:id="@+id/clear_order_list"
+        android:layout_width="match_parent"
+        android:layout_height="1100px"
+        android:layout_marginLeft="70px"
+        android:layout_marginTop="50px"
+        android:layout_marginRight="70px"
+        android:divider="@null"
+        android:dividerHeight="50px"
+        android:scrollbars="none"
+        app:layout_constraintTop_toBottomOf="@+id/lr_order">
+
+    </ListView>
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_clear_order_finish"
+        android:layout_width="367px"
+        android:layout_height="114px"
+        android:layout_marginLeft="120px"
+        android:layout_marginBottom="232px"
+        android:background="@drawable/sec_btn_theme_bg"
+        android:gravity="center"
+        android:text="完成清运"
+        android:textColor="@color/tv_theme_color"
+        android:textSize="38px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_clear_order_cancel"
+        android:layout_width="367px"
+        android:layout_height="114px"
+        android:layout_marginRight="120px"
+        android:layout_marginBottom="232px"
+        android:background="@drawable/sec_btn_theme_bg"
+        android:gravity="center"
+        android:text="退出登录"
+        android:textColor="@color/tv_theme_color"
+        android:textSize="38px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_upload_clear_data"
+        android:layout_width="734px"
+        android:layout_height="114px"
+        android:layout_marginBottom="232px"
+        android:background="@drawable/sec_btn_theme_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="数据上传处理中"
+            android:textColor="@color/black"
+            android:textSize="38px" />
+
+        <com.tlh.android.widget.CircularLinesProgress
+            android:id="@+id/clp"
+            android:layout_width="88px"
+            android:layout_height="88px"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

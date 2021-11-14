@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_type_plastic"
+    android:layout_width="360px"
+    android:layout_height="wrap_content"
+    android:gravity="center|top"
+    android:visibility="gone"
+    tools:visibility="visible"
+    android:orientation="vertical">
+
+    <com.tlh.android.widget.ImageViewWithTxt
+        android:id="@+id/iv_plastic"
+        android:layout_width="244px"
+        android:layout_height="244px"
+        android:src="@mipmap/ic_class_plastic" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="21px"
+        android:orientation="horizontal">
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:layout_width="21px"
+            android:layout_height="wrap_content"
+            android:drawablePadding="21px"
+            android:drawableTop="@drawable/black_dot"
+            android:text="塑料袋"
+            android:textColor="@color/black"
+            android:textSize="22px" />
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:layout_width="21px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:drawablePadding="21px"
+            android:drawableTop="@drawable/black_dot"
+            android:text="塑料玩具"
+            android:textColor="@color/black"
+            android:textSize="22px" />
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:layout_width="21px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:drawablePadding="21px"
+            android:drawableTop="@drawable/black_dot"
+            android:text="塑料盒"
+            android:textColor="@color/black"
+            android:textSize="22px" />
+
+    </LinearLayout>
+</LinearLayout>

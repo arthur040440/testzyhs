@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/dialog_throw">
+
+    <ImageView
+        android:id="@+id/iv_waste_battery"
+        android:layout_width="54px"
+        android:layout_height="84px"
+        android:layout_marginLeft="155px"
+        android:layout_marginTop="457px"
+        android:src="@mipmap/ic_type_poision1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="146px"
+        android:layout_marginTop="20px"
+        android:text="@string/waste_battery"
+        android:textColor="@color/black"
+        android:textSize="24px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_waste_battery" />
+
+    <ImageView
+        android:id="@+id/iv_expired_drugs"
+        android:layout_width="97px"
+        android:layout_height="85px"
+        android:src="@mipmap/ic_type_poision2"
+        app:layout_constraintBottom_toBottomOf="@id/iv_waste_battery"
+        android:layout_marginLeft="296px"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:text="@string/expired_drugs"
+        android:textColor="@color/black"
+        android:textSize="24px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="296px"
+        app:layout_constraintTop_toBottomOf="@id/iv_expired_drugs" />
+
+    <ImageView
+        android:id="@+id/iv_thermometer"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:layout_marginRight="303px"
+        android:src="@mipmap/ic_type_poision3"
+        app:layout_constraintBottom_toBottomOf="@id/iv_waste_battery"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:layout_marginRight="310px"
+        android:text="@string/thermometer"
+        android:textColor="@color/black"
+        android:textSize="24px"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_thermometer" />
+
+    <ImageView
+        android:id="@+id/iv_plastic_basin"
+        android:layout_width="34px"
+        android:layout_height="84px"
+        android:layout_marginRight="166px"
+        android:src="@mipmap/ic_type_poision4"
+        app:layout_constraintBottom_toBottomOf="@id/iv_waste_battery"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:layout_marginRight="135px"
+        android:text="@string/waste_fluorescent_lamp"
+        android:textColor="@color/black"
+        android:textSize="24px"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_plastic_basin" />
+
+</merge>

@@ -1,0 +1,6 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="coupons_prompt">您有一张饿了么优惠券快去领取吧！</string>
+
+
+</resources>

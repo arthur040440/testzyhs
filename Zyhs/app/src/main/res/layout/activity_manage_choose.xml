@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_screen_other_bg">
+
+    <include layout="@layout/page_head_logo" />
+
+    <TextView
+        android:id="@+id/tv_countdown_time"
+        android:layout_width="230px"
+        android:layout_height="75px"
+        android:layout_marginRight="39px"
+        android:layout_marginTop="95px"
+        android:background="@mipmap/ic_cutdown_time_bg"
+        android:paddingLeft="108px"
+        android:paddingTop="10px"
+        android:textColor="@color/black_171717"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="60s"
+        android:textSize="38px" />
+
+    <com.tlh.android.widget.ImageTextButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="242px"
+        android:layout_marginLeft="312px"
+        android:layout_marginRight="312px"
+        android:gravity="center"
+        android:text="请选择功能测试页面"
+        app:layout_constraintTop_toBottomOf="@id/iv_logo_top"
+        android:textColor="@color/black"
+        android:textSize="38px"
+        app:leftDrawable="@mipmap/ic_left_fish"
+        app:rightDrawable="@mipmap/ic_right_fish" />
+
+    <TextView
+        android:id="@+id/tv_maintenance_people"
+        android:layout_width="734px"
+        android:layout_height="114px"
+        android:background="@drawable/sec_btn_theme_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="投递页面"
+        android:textColor="@color/black"
+        android:textSize="38px"
+        android:layout_marginTop="416px"
+        app:layout_constraintTop_toBottomOf="@id/iv_logo_top"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_manager_people"
+        android:layout_width="734px"
+        android:layout_height="114px"
+        android:background="@drawable/sec_btn_theme_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="后台管理"
+        android:textColor="@color/black"
+        android:textSize="38px"
+        android:layout_marginTop="83px"
+        app:layout_constraintTop_toBottomOf="@id/tv_maintenance_people"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_clear_garbage_people"
+        android:layout_width="734px"
+        android:layout_height="114px"
+        android:background="@drawable/sec_btn_theme_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="清运界面"
+        android:textColor="@color/black"
+        android:textSize="38px"
+        android:layout_marginTop="83px"
+        app:layout_constraintTop_toBottomOf="@id/tv_manager_people"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

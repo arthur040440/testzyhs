@@ -1,0 +1,120 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.opengl.GLSurfaceView
+        android:id="@+id/opengl_layout_surfaceview"
+        android:layout_width="809px"
+        android:layout_height="607px"
+        android:layout_marginTop="326px"
+        app:layout_constraintDimensionRatio="H,4:3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.face.widget.FaceDetectRoundView
+        android:id="@+id/face_detect_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:layout_width="734px"
+        android:layout_height="114px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="142px"
+        android:gravity="center"
+        android:text="请将视线对准屏幕上方摄像头，将面部移入人形框内以核验您的身份信息"
+        android:textColor="#000000"
+        android:textSize="38px"
+        app:layout_constraintBottom_toTopOf="@id/detect_close"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/detect_close"
+        android:layout_width="match_parent"
+        android:layout_height="114px"
+        android:layout_marginBottom="577px"
+        android:layout_marginLeft="173px"
+        android:layout_marginRight="173px"
+        android:background="@drawable/sec_btn_theme_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="返回二维码登录"
+        android:textColor="@color/tv_theme_color"
+        android:textSize="38px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="326px"
+        android:gravity="center"
+        android:textColor="#70FFFFFF"
+        android:textSize="100px"
+        app:layout_constraintDimensionRatio="H,16:9"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include layout="@layout/page_head_cutdown_time" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_575757"
+        android:textSize="38px"
+        app:layout_constraintRight_toRightOf="@id/opengl_layout_surfaceview"
+        app:layout_constraintTop_toBottomOf="@id/tv_countdown_time"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="326px"
+        android:visibility="invisible"
+        tools:text="性别：男" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_575757"
+        android:textSize="38px"
+        app:layout_constraintRight_toRightOf="@id/opengl_layout_surfaceview"
+        app:layout_constraintTop_toBottomOf="@id/tv_gender"
+        app:layout_constraintLeft_toLeftOf="@id/tv_gender"
+        android:layout_marginTop="10px"
+        android:visibility="gone"
+        tools:text="年龄：29" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_beauty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_575757"
+        android:textSize="38px"
+        app:layout_constraintRight_toRightOf="@id/opengl_layout_surfaceview"
+        app:layout_constraintTop_toBottomOf="@id/tv_age"
+        app:layout_constraintLeft_toLeftOf="@id/tv_age"
+        android:layout_marginTop="10px"
+        android:visibility="gone"
+        tools:text="颜值：84" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_scan_msg"
+        android:layout_width="809px"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="45px"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="@id/opengl_layout_surfaceview"
+        app:layout_constraintBottom_toBottomOf="@id/opengl_layout_surfaceview"
+        app:layout_constraintRight_toRightOf="@id/opengl_layout_surfaceview"
+        app:layout_constraintTop_toTopOf="@id/opengl_layout_surfaceview"
+        android:text="用户信息采集中，请稍等"/>
+
+</android.support.constraint.ConstraintLayout>

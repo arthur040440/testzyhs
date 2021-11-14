@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_one"
+        android:layout_width="200px"
+        android:layout_height="96px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:cardCornerRadius="4px"
+        app:cardElevation="2px"
+        android:layout_marginLeft="218px">
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:id="@+id/cv_tv_one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ripple_phone_keyboard"
+            android:textColor="@color/color_phone_keyboard_text"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:textSize="48px"
+            android:text="1" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_two"
+        android:layout_width="200px"
+        android:layout_height="96px"
+        app:layout_constraintLeft_toRightOf="@id/cv_one"
+        app:cardCornerRadius="4px"
+        app:cardElevation="2px"
+        android:layout_marginLeft="20px">
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:id="@+id/cv_tv_two"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ripple_phone_keyboard"
+            android:textColor="@color/color_phone_keyboard_text"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:textSize="48px"
+            android:text="2" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_three"
+        android:layout_width="200px"
+        android:layout_height="96px"
+        app:layout_constraintLeft_toRightOf="@id/cv_two"
+        app:cardCornerRadius="4px"
+        app:cardElevation="2px"
+        android:layout_marginLeft="20px">
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:id="@+id/cv_tv_three"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ripple_phone_keyboard"
+            android:textColor="@color/color_phone_keyboard_text"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:textSize="48px"
+            android:text="3" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_four"
+        android:layout_width="200px"
+        android:layout_height="96px"
+        app:layout_constraintTop_toBottomOf="@id/cv_one"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:cardCornerRadius="4px"
+        app:cardElevation="2px"
+        android:layout_marginTop="32px"
+        android:layout_marginLeft="218px">
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:id="@+id/cv_tv_four"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ripple_phone_keyboard"
+            android:textColor="@color/color_phone_keyboard_text"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:textSize="48px"
+            android:text="4" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_five"
+        android:layout_width="200px"
+        android:layout_height="96px"
+        app:layout_constraintLeft_toRightOf="@id/cv_four"
+        app:layout_constraintTop_toBottomOf="@id/cv_two"
+        app:cardCornerRadius="4px"
+        app:cardElevation="2px"
+        android:layout_marginTop="32px"
+        android:layout_marginLeft="20px">
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:id="@+id/cv_tv_five"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ripple_phone_keyboard"
+            android:textColor="@color/color_phone_keyboard_text"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:textSize="48px"
+            android:text="5" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_six"
+        android:layout_width="200px"
+        android:layout_height="96px"
+        app:layout_constraintLeft_toRightOf="@id/cv_five"
+        app:layout_constraintTop_toBottomOf="@id/cv_three"
+        app:cardCornerRadius="4px"
+        app:cardElevation="2px"
+        android:layout_marginTop="32px"
+        android:layout_marginLeft="20px">
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:id="@+id/cv_tv_six"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ripple_phone_keyboard"
+            android:textColor="@color/color_phone_keyboard_text"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:textSize="48px"
+            android:text="6" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_seven"
+        android:layout_width="200px"
+        android:layout_height="96px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cv_four"
+        app:cardCornerRadius="4px"
+        app:cardElevation="2px"
+        android:layout_marginTop="32px"
+        android:layout_marginLeft="218px">
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:id="@+id/cv_tv_seven"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ripple_phone_keyboard"
+            android:textColor="@color/color_phone_keyboard_text"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:textSize="48px"
+            android:text="7" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_eight"
+        android:layout_width="200px"
+        android:layout_height="96px"
+        app:layout_constraintLeft_toRightOf="@id/cv_seven"
+        app:layout_constraintTop_toBottomOf="@id/cv_five"
+        app:cardCornerRadius="4px"
+        app:cardElevation="2px"
+        android:layout_marginTop="32px"
+        android:layout_marginLeft="20px">
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:id="@+id/cv_tv_eight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ripple_phone_keyboard"
+            android:textColor="@color/color_phone_keyboard_text"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:textSize="48px"
+            android:text="8" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="200px"
+        android:layout_height="96px"
+        app:layout_constraintLeft_toRightOf="@id/cv_eight"
+        app:layout_constraintTop_toBottomOf="@id/cv_six"
+        app:cardCornerRadius="4px"
+        app:cardElevation="2px"
+        android:layout_marginTop="32px"
+        android:layout_marginLeft="20px">
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:id="@+id/cv_tv_nine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ripple_phone_keyboard"
+            android:textColor="@color/color_phone_keyboard_text"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:textSize="48px"
+            android:text="9" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_zero"
+        android:layout_width="200px"
+        android:layout_height="96px"
+        app:layout_constraintLeft_toLeftOf="@id/cv_seven"
+        app:layout_constraintTop_toBottomOf="@id/cv_seven"
+        app:cardCornerRadius="4px"
+        app:cardElevation="2px"
+        android:layout_marginTop="32px"
+        android:layout_marginLeft="218px">
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:id="@+id/cv_tv_zero"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ripple_phone_keyboard"
+            android:textColor="@color/color_phone_keyboard_text"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:textSize="48px"
+            android:text="0" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="200px"
+        android:layout_height="96px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cv_seven"
+        app:cardCornerRadius="4px"
+        app:cardElevation="2px"
+        android:layout_marginTop="32px"
+        android:layout_marginLeft="218px">
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:id="@+id/cv_tv_clear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ripple_phone_keyboard"
+            android:textColor="@color/color_phone_keyboard_text"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:textSize="38px"
+            android:text="清除" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="200px"
+        android:layout_height="96px"
+        app:layout_constraintLeft_toRightOf="@id/cv_zero"
+        app:layout_constraintTop_toBottomOf="@id/cv_eight"
+        app:cardCornerRadius="4px"
+        app:cardElevation="2px"
+        android:layout_marginTop="32px"
+        android:layout_marginLeft="20px">
+
+        <ImageView
+            android:id="@+id/cv_tv_delete"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_delete_num"
+            android:background="@drawable/ripple_phone_keyboard"
+            android:padding="20px"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="centerInside"/>
+
+    </android.support.v7.widget.CardView>
+
+
+</android.support.constraint.ConstraintLayout>

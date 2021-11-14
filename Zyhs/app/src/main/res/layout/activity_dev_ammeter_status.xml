@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@mipmap/ic_screen_other_bg">
+
+    <include layout="@layout/page_head_logo" />
+
+    <include layout="@layout/activity_dev_status_normal" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_degrees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="238px"
+        android:layout_marginTop="73px"
+        tools:text="电表读数：223"
+        android:textColor="@color/black"
+        android:textSize="28px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/itb_dev" />
+
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_back_to_pre"
+        android:layout_width="734px"
+        android:layout_height="114px"
+        android:layout_marginBottom="552px"
+        android:background="@drawable/sec_btn_theme_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="返回"
+        android:textColor="@color/tv_theme_color"
+        android:textSize="38px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_clear_data"
+        android:layout_width="734px"
+        android:layout_height="114px"
+        android:layout_marginBottom="20px"
+        android:background="@drawable/sec_btn_theme_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/clear_ammeter_data"
+        android:textColor="@color/tv_theme_color"
+        android:textSize="38px"
+        app:layout_constraintBottom_toTopOf="@id/tv_back_to_pre"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_update_data"
+        android:layout_width="734px"
+        android:layout_height="114px"
+        android:layout_marginBottom="20px"
+        android:background="@drawable/sec_btn_theme_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/upload_meter_data"
+        android:textColor="@color/tv_theme_color"
+        android:textSize="38px"
+        app:layout_constraintBottom_toTopOf="@id/tv_clear_data"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

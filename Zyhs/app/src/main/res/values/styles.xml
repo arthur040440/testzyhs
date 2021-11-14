@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@null</item>
+        <!--<item name="android:typeface">serif</item>-->
+    </style>
+
+    <style name="StartActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@mipmap/ic_banner_start</item>
+
+    </style>
+
+
+    <style name="gc_botttom_menu_dialog" parent="@android:style/Theme.Panel">
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- 设置dialog弹出，退出动画 -->
+    <style name="dialogWindowAnim" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/unzoom_in</item>
+        <!--<item name="android:windowExitAnimation">@anim/unzoom_out</item>-->
+    </style>
+
+
+</resources>

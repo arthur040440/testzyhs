@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <WebView
+        android:id="@+id/wv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_back"
+        android:layout_width="734px"
+        android:layout_height="114px"
+        android:background="@drawable/sec_btn_theme_bg"
+        android:gravity="center"
+        android:text="返回上一页"
+        android:textColor="@color/black"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="154px"
+        android:textSize="38px" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_finish"
+        android:layout_width="734px"
+        android:layout_height="114px"
+        android:background="@drawable/sec_btn_theme_bg"
+        android:gravity="center"
+        android:text="退出"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20px"
+        android:layout_gravity="bottom|center"
+        android:textSize="38px" />
+
+</FrameLayout>

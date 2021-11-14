@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="929px"
+    android:layout_height="1409px"
+    android:layout_marginLeft="50px"
+    android:layout_marginTop="180px"
+    android:layout_marginRight="101px"
+    android:layout_marginBottom="331px"
+    android:background="@mipmap/coupons_bg">
+
+    <ImageView
+        android:id="@+id/iv_coupons_logo"
+        android:layout_width="236px"
+        android:layout_height="58px"
+        android:layout_marginLeft="359px"
+        android:layout_marginTop="450px"
+        android:layout_marginRight="334px"
+        android:src="@mipmap/coupons_logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_coupons_reward"
+        android:layout_width="533px"
+        android:layout_height="100px"
+        android:layout_marginLeft="249px"
+        android:layout_marginTop="31px"
+        android:layout_marginRight="147px"
+        android:src="@mipmap/coupons_reward"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_coupons_logo" />
+
+    <TextView
+        android:id="@+id/tv_coupons_introduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="374px"
+        android:layout_marginTop="46px"
+        android:layout_marginRight="331px"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1"
+        android:text="扫码领取北冰洋瓷罐酸奶1元代金券\n仅限盒马鲜生APP扫码"
+        android:textColor="@color/black"
+        android:textSize="28px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_coupons_reward" />
+
+
+    <ImageView
+        android:id="@+id/iv_coupons_code"
+        android:layout_width="220px"
+        android:layout_height="220px"
+        android:layout_marginLeft="380px"
+        android:layout_marginTop="38px"
+        android:layout_marginRight="329px"
+        android:src="@mipmap/coupons_code"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_coupons_introduce" />
+
+    <ImageView
+        android:id="@+id/iv_coupons_hema"
+        android:layout_width="173px"
+        android:layout_height="113px"
+        android:layout_marginLeft="404px"
+        android:layout_marginTop="44px"
+        android:layout_marginRight="352px"
+        android:src="@mipmap/coupons_hemm"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_coupons_code" />
+
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_throw_receive"
+        android:layout_width="748px"
+        android:layout_height="116px"
+        android:layout_marginLeft="110px"
+        android:layout_marginTop="68px"
+        android:layout_marginRight="71px"
+        android:background="@drawable/sec_btn_theme_bg"
+        android:gravity="center"
+        android:text="我已领取（45）"
+        android:textColor="@color/black"
+        android:textSize="38px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_coupons_hema" />
+
+</android.support.constraint.ConstraintLayout>

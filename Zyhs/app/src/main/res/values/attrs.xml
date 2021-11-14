@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ImageTextButton attrs-->
+    <attr name="leftDrawable" format="reference"/>
+    <attr name="rightDrawable" format="reference"/>
+    <attr name="topDrawable" format="reference"/>
+    <attr name="drawableWidth" format="dimension"/>
+    <attr name="drawableHeight" format="dimension"/>
+    <attr name="topWidth" format="dimension"/>
+    <attr name="topHeight" format="dimension"/>
+
+    <declare-styleable name="ImageTextButton">
+        <attr name="leftDrawable"/>
+        <attr name="rightDrawable"/>
+        <attr name="topDrawable"/>
+        <attr name="drawableWidth"/>
+        <attr name="drawableHeight"/>
+        <attr name="topWidth"/>
+        <attr name="topHeight"/>
+    </declare-styleable>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="border_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ClassView">
+        <attr name="arc_color" format="color" />
+        <attr name="arc_thickness" format="dimension" />
+        <attr name="circle_color" format="color" />
+        <attr name="circle_thickness" format="dimension" />
+        <attr name="class_drawable" format="reference"/>
+        <attr name="class_drawable_width" format="dimension"/>
+        <attr name="class_drawable_height" format="dimension"/>
+        <attr name="class_text" format="string" />
+        <attr name="class_text_color" format="color" />
+        <attr name="class_text_size" format="dimension" />
+    </declare-styleable>
+
+</resources>

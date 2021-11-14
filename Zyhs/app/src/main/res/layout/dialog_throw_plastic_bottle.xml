@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/dialog_throw">
+
+    <ImageView
+        android:id="@+id/iv_drinks_bottle"
+        android:layout_width="24px"
+        android:layout_height="87px"
+        android:layout_marginLeft="255px"
+        android:layout_marginTop="457px"
+        android:src="@mipmap/ic_type_plastic_bottle1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="233px"
+        android:layout_marginTop="20px"
+        android:text="@string/drinks_bottle"
+        android:textColor="@color/black"
+        android:textSize="24px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_drinks_bottle" />
+
+    <ImageView
+        android:id="@+id/iv_plastic_cup"
+        android:layout_width="36px"
+        android:layout_height="87px"
+        android:layout_gravity="top"
+        android:src="@mipmap/ic_type_plastic_bottle2"
+        app:layout_constraintBottom_toBottomOf="@id/iv_drinks_bottle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:text="@string/plastic_cup"
+        android:textColor="@color/black"
+        android:textSize="24px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_plastic_cup" />
+
+    <ImageView
+        android:id="@+id/iv_cans"
+        android:layout_width="35px"
+        android:layout_height="66px"
+        android:layout_marginRight="243px"
+        android:src="@mipmap/ic_type_plastic_bottle3"
+        app:layout_constraintBottom_toBottomOf="@id/iv_drinks_bottle"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:layout_marginRight="226px"
+        android:text="@string/cans"
+        android:textColor="@color/black"
+        android:textSize="24px"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_cans" />
+
+
+</merge>

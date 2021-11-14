@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/top_border"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingTop="39px">
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/all_income"
+        android:textColor="@color/black"
+        android:textSize="22px" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_total_zyb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2px"
+        android:paddingBottom="0px"
+        android:textColor="@color/black"
+        android:textSize="32px"
+        tools:text="10000" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zy_icon"
+        android:textColor="@color/black"
+        android:textSize="22px" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_service_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:layout_marginBottom="1px"
+        android:textColor="@color/tip_red"
+        android:textSize="32px"
+        android:visibility="invisible"
+        android:text="@string/order_service_review" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jyz"
+        android:textColor="@color/black"
+        android:textSize="22px"
+        android:visibility="gone" />
+
+</LinearLayout>

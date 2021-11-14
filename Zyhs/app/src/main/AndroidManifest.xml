@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zhangyuhuishou.zyhs"
+    android:installLocation="internalOnly">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- 系统完全启动 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- 存储权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 访问网络 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 相机 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 读取日志 -->
+    <uses-permission android:name="android.permission.READ_LOGS" /> <!-- 录音 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" /> <!-- 网络状态权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission
+        android:name="android.permission.INSTALL_PACKAGES"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name=".base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo"
+        android:installLocation="internalOnly"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".database.SqliteActivity"></activity>
+        <activity
+            android:name=".actys.MaintainLogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".actys.ClearAndTransportActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+        <meta-data
+            android:name="com.zhangyuhuishou.zyhs.banner.GlideConfiguration"
+            android:value="GlideModule" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+
+        <activity
+            android:name=".actys.SplashActivity"
+            android:theme="@style/StartActivityTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".actys.TestActivity"
+            android:screenOrientation="portrait" /> <!-- 自启动服务 -->
+        <receiver
+            android:name=".receiver.BootBroadcastReceiver"
+            android:directBootAware="true"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter android:priority="1000">
+                <action android:name="RestartSerivcesForSystemEventReceiver" />
+            </intent-filter>
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+                <action android:name="android.intent.action.MEDIA_EJECT" />
+
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver> <!-- 网络状态监听 -->
+        <receiver android:name=".receiver.netmonitor.NetBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver> <!-- 静默安装 -->
+        <receiver android:name=".receiver.InstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver> <!-- 分类投递 -->
+        <activity
+            android:name=".actys.ThrowThingsActivity"
+            android:screenOrientation="portrait" /> <!-- 启动页 -->
+        <activity
+            android:name=".actys.MainActivity"
+            android:screenOrientation="portrait" /> <!-- 设置 -->
+        <activity
+            android:name=".actys.SettingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" /> <!-- 设备wifi状态 -->
+        <activity
+            android:name=".actys.DevWifiStatusActivity"
+            android:screenOrientation="portrait" /> <!-- 设备电表状态 -->
+        <activity
+            android:name=".actys.DevAmmeterStatusActivity"
+            android:screenOrientation="portrait" /> <!-- wifi设置 -->
+        <activity
+            android:name=".actys.WifiSettingActivity"
+            android:screenOrientation="portrait" /> <!-- 人脸识别 -->
+        <activity
+            android:name="com.face.activity.OpenglActivity"
+            android:screenOrientation="portrait" /> <!-- 升级服务 -->
+        <service android:name=".service.UpdateService" /> <!-- 新版二维码扫码 -->
+        <activity
+            android:name=".actys.HomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" /> <!-- 手机号码界面 -->
+        <activity
+            android:name=".actys.FaceTelPhoneActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" /> <!-- 保活进程 -->
+        <service
+            android:name=".service.keepAppLiveService"
+            android:process=":live" /> <!-- 角色分配 -->
+        <activity
+            android:name=".actys.RoleChooseActivity"
+            android:screenOrientation="portrait" /> <!-- 清运人员 -->
+        <activity
+            android:name=".actys.ClearPeopleActivity"
+            android:screenOrientation="portrait" /> <!-- 清运人员(下一步) -->
+        <activity
+            android:name=".actys.NextStepActivity"
+            android:screenOrientation="portrait" /> <!-- 维护人员 -->
+        <activity
+            android:name=".actys.MaintainPeopleActivity"
+            android:screenOrientation="portrait" /> <!-- 设备控制 -->
+        <activity
+            android:name=".actys.DevCtrlActivity"
+            android:screenOrientation="portrait" /> <!-- 帮助引导页面 -->
+        <activity
+            android:name=".guide.activity.GuideActivity"
+            android:screenOrientation="portrait" /> <!-- PCB升级页面 -->
+        <activity
+            android:name=".actys.PcbProgramUpdateActivity"
+            android:screenOrientation="portrait" /> <!-- ali广告 -->
+        <activity
+            android:name=".actys.AliBannerActivity"
+            android:screenOrientation="portrait" /> <!-- 角色选择页面（工厂测试） -->
+        <activity
+            android:name=".actys.ManagerChooseActivity"
+            android:screenOrientation="portrait" /> <!-- 轮询测试 -->
+        <activity
+            android:name=".actys.PollingTestActivity"
+            android:screenOrientation="portrait" /> <!-- 轮询测试 -->
+        <activity
+            android:name=".actys.PollingTestActivity2"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

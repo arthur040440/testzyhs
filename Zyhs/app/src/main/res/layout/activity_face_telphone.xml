@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_screen_bg">
+
+    <include layout="@layout/page_head_logo" />
+
+    <include layout="@layout/page_head_cutdown_time" />
+
+    <com.tlh.android.widget.ImageTextButton
+        android:id="@+id/ll_welcome_use"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="192px"
+        android:layout_marginRight="192px"
+        android:layout_marginTop="233px"
+        android:gravity="center"
+        android:text="@string/face_tel_tip"
+        android:textColor="@color/black"
+        android:textSize="38px"
+        app:layout_constraintTop_toBottomOf="@id/iv_logo_top"
+        custom:leftDrawable="@mipmap/ic_left_fish"
+        custom:rightDrawable="@mipmap/ic_right_fish" />
+
+    <include
+        layout="@layout/activity_face_telphone_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="149px"
+        app:layout_constraintTop_toBottomOf="@id/ll_welcome_use"/>
+
+    <include
+        layout="@layout/activity_face_telphone_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="508px"
+        android:layout_marginTop="842px"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_back_to_pre"
+        android:layout_width="734px"
+        android:layout_height="114px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="300px"
+        android:background="@drawable/sec_btn_theme_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="返回二维码登录"
+        android:textColor="@color/black"
+        android:textSize="38px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

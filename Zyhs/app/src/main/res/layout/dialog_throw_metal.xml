@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/dialog_throw">
+
+    <ImageView
+        android:id="@+id/iv_metal_kitchenware"
+        android:layout_width="91px"
+        android:layout_height="96px"
+        android:layout_marginLeft="136px"
+        android:layout_marginTop="457px"
+        android:src="@mipmap/ic_type_metal1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="133px"
+        android:layout_marginTop="20px"
+        android:text="@string/metal_kitchenware"
+        android:textColor="@color/black"
+        android:textSize="24px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_metal_kitchenware" />
+
+    <ImageView
+        android:id="@+id/iv_stainless_steel_teacup"
+        android:layout_width="78px"
+        android:layout_height="72px"
+        android:src="@mipmap/ic_type_metal2"
+        app:layout_constraintBottom_toBottomOf="@id/iv_metal_kitchenware"
+        android:layout_marginLeft="315px"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:text="@string/stainless_steel_teacup"
+        android:textColor="@color/black"
+        android:textSize="24px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="285px"
+        app:layout_constraintTop_toBottomOf="@id/iv_stainless_steel_teacup" />
+
+    <ImageView
+        android:id="@+id/iv_metal_tableware"
+        android:layout_width="37px"
+        android:layout_height="95px"
+        android:layout_marginRight="327px"
+        android:src="@mipmap/ic_type_metal3"
+        app:layout_constraintBottom_toBottomOf="@id/iv_metal_kitchenware"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:layout_marginRight="298px"
+        android:text="@string/metal_tableware"
+        android:textColor="@color/black"
+        android:textSize="24px"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_metal_tableware" />
+
+    <ImageView
+        android:id="@+id/iv_kitchen_knife"
+        android:layout_width="87px"
+        android:layout_height="93px"
+        android:layout_marginRight="141px"
+        android:src="@mipmap/ic_type_metal4"
+        app:layout_constraintBottom_toBottomOf="@id/iv_metal_kitchenware"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:layout_marginRight="160px"
+        android:text="@string/kitchen_knife"
+        android:textColor="@color/black"
+        android:textSize="24px"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_kitchen_knife" />
+
+</merge>

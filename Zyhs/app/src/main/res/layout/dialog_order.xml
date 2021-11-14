@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="858px"
+    android:layout_height="1170px"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical">
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_dev_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="64px"
+        android:layout_marginTop="73px"
+        android:textColor="@color/black"
+        android:textSize="24px"
+        app:layout_constraintRight_toLeftOf="@id/tv_current_time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="贝利集团" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_current_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="77px"
+        android:layout_marginRight="104px"
+        android:textColor="@color/grgray"
+        android:textSize="24px"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="2018-07-01  12：00" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_dev_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="64px"
+        android:layout_marginTop="130px"
+        android:textColor="@color/black"
+        android:textSize="32px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="浙江省杭州市余杭区贝易物联01号机" />
+
+    <include
+        layout="@layout/order_yl_info"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_marginLeft="64px"
+        android:layout_marginTop="22px"
+        android:layout_marginRight="74px"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_dev_des"
+        tools:visibility="visible" />
+
+    <include
+        layout="@layout/order_glass_info"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_marginLeft="64px"
+        android:layout_marginRight="74px"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include_yl"
+        tools:visibility="visible" />
+
+    <include
+        layout="@layout/order_paple_info"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_marginLeft="64px"
+        android:layout_marginRight="74px"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include_glass"
+        tools:visibility="visible" />
+
+    <include
+        layout="@layout/order_spin_info"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_marginLeft="64px"
+        android:layout_marginRight="74px"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include_paper"
+        tools:visibility="visible" />
+
+    <include
+        layout="@layout/order_plastic_info"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_marginLeft="64px"
+        android:layout_marginRight="74px"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include_spin"
+        tools:visibility="visible" />
+
+    <include
+        layout="@layout/order_metal_info"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_marginLeft="64px"
+        android:layout_marginRight="74px"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include_plastic"
+        tools:visibility="visible" />
+
+    <include
+        layout="@layout/order_poison_info"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_marginLeft="64px"
+        android:layout_marginRight="74px"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include_metal"
+        tools:visibility="visible" />
+
+    <include
+        layout="@layout/order_other_info"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_marginLeft="64px"
+        android:layout_marginRight="74px"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/include_poison" />
+
+    <include
+        layout="@layout/order_income_info"
+        android:layout_width="match_parent"
+        android:layout_height="110px"
+        android:layout_marginLeft="35px"
+        android:layout_marginRight="35px"
+        app:layout_constraintBottom_toTopOf="@id/tv_submit_order"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_submit_order"
+        android:layout_width="734px"
+        android:layout_height="114px"
+        android:layout_gravity="center"
+        android:layout_marginBottom="42px"
+        android:background="@drawable/sec_btn_theme_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/over"
+        android:textColor="@color/tv_theme_color"
+        android:textSize="38px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
+
+

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_screen_other_bg">
+
+    <include layout="@layout/page_head_logo" />
+
+    <include layout="@layout/activity_dev_status_normal" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_ip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="238px"
+        android:layout_marginTop="73px"
+        android:textColor="@color/black"
+        android:textSize="28px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/itb_dev"
+        tools:text="IP地址：     192.168.1.1" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_sub_net"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="238px"
+        android:layout_marginTop="57px"
+        android:textColor="@color/black"
+        android:textSize="28px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_ip"
+        tools:text="子网掩码：255.255.255.0" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_gateway"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="238px"
+        android:layout_marginTop="57px"
+        android:textColor="@color/black"
+        android:textSize="28px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_sub_net"
+        tools:text="网关：         192.168.1.1" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_back_to_pre"
+        android:layout_width="734px"
+        android:layout_height="114px"
+        android:layout_marginBottom="552px"
+        android:background="@drawable/sec_btn_theme_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="返回"
+        android:textColor="@color/tv_theme_color"
+        android:textSize="38px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

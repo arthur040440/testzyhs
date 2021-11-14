@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:layout_width="858px"
+    android:layout_height="1170px"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="280px"
+    android:layout_marginBottom="467px"
+    android:background="@drawable/dialog_bg">
+
+
+    <com.tlh.android.widget.ImageTextButton
+        android:id="@+id/itb_order_exception_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="281px"
+        android:layout_marginTop="144px"
+        android:layout_marginRight="281px"
+        android:gravity="center"
+        android:text="@string/order_exception"
+        android:textColor="@color/black"
+        android:textSize="38px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:leftDrawable="@mipmap/ic_left_fish"
+        app:rightDrawable="@mipmap/ic_right_fish" />
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/dg_iv_gif"
+        android:layout_width="450px"
+        android:layout_height="450px"
+        android:layout_gravity="center"
+        android:layout_marginTop="50px"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_animation_fault"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itb_order_exception_tip" />
+
+    <TextView
+        android:id="@+id/tv_order_exception"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35px"
+        android:text="@string/order_exception_text"
+        android:textColor="@color/black"
+        android:textSize="40px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dg_iv_gif" />
+
+    <TextView
+        android:id="@+id/tv_order_exception_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23px"
+        android:text="@string/order_exception_tips"
+        android:textColor="@color/black"
+        android:textSize="32px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_order_exception" />
+
+    <TextView
+        android:id="@+id/tv_order_customer_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24px"
+        android:text="@string/order_customer_service"
+        android:textColor="@color/customer_service"
+        android:textSize="32px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_order_exception_tips" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_order_exception_confirm"
+        android:layout_width="734px"
+        android:layout_height="114px"
+        android:layout_marginBottom="82px"
+        android:background="@drawable/sec_btn_theme_bg"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/tv_theme_color"
+        android:textSize="38px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,1149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_screen_other_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66px"
+        android:layout_marginTop="7px"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_maintain_user_logo"
+            android:layout_width="66px"
+            android:layout_height="66px"
+            android:layout_marginLeft="41px"
+            android:adjustViewBounds="true"
+            android:background="@mipmap/ic_user_fault_logo"
+            android:scaleType="fitXY" />
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:id="@+id/tv_maintain_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="17px"
+            android:text="章鱼游客"
+            android:textColor="@color/nick_color"
+            android:textSize="22px" />
+
+        <ImageView
+            android:layout_width="27px"
+            android:layout_height="27px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20px"
+            android:background="@mipmap/ic_img_coin" />
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:id="@+id/tv_maintain_user_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8px"
+            android:textColor="#FF030000"
+            android:textSize="20px" />
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:id="@+id/time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18px"
+            android:layout_marginRight="40px"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="@color/black"
+            android:textSize="20px"
+            tools:text="NO.Zwefiuhsdiugd" />
+    </LinearLayout>
+
+    <include layout="@layout/page_head_logo" />
+
+    <com.tlh.android.widget.MyScrollView
+        android:id="@+id/sv_maintain_form"
+        android:layout_width="match_parent"
+        android:layout_height="1050px"
+        android:layout_marginLeft="109px"
+        android:layout_marginTop="72px"
+        android:layout_marginRight="108px"
+        android:orientation="vertical"
+        android:scrollbars="none"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_logo_top">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_maintain_appearance_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="外观检查"
+                android:textColor="@color/black"
+                android:textSize="@dimen/maintain_form_first_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/lr_maintain_appearance_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="38px"
+                android:layout_marginTop="29px"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/tv_maintain_appearance_check">
+
+                <TextView
+                    android:id="@+id/tv_cabinet_rust"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cabinet_rust"
+                    android:textColor="@color/maintain_form_second"
+                    android:textSize="@dimen/maintain_form_second_size" />
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/sb_cabinet_rust"
+                    android:layout_width="69px"
+                    android:layout_height="31px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="64px"
+                    app:sb_background="@color/sb_background"
+                    app:sb_button_color="@color/white"
+                    app:sb_checked_color="@color/sb_checked_color"
+                    app:sb_show_indicator="false" />
+
+                <TextView
+                    android:id="@+id/tv_cabinet_broken"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75px"
+                    android:text="@string/cabinet_broken"
+                    android:textColor="@color/maintain_form_second"
+                    android:textSize="@dimen/maintain_form_second_size" />
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/sb_cabinet_broken"
+                    android:layout_width="69px"
+                    android:layout_height="31px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="33px"
+                    app:sb_background="@color/sb_background"
+                    app:sb_button_color="@color/white"
+                    app:sb_checked_color="@color/sb_checked_color"
+                    app:sb_show_indicator="false" />
+
+
+                <TextView
+                    android:id="@+id/tv_cabinet_loose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="58px"
+                    android:text="@string/cabinet_loose"
+                    android:textColor="@color/maintain_form_second"
+                    android:textSize="@dimen/maintain_form_second_size" />
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/sb_cabinet_loose"
+                    android:layout_width="69px"
+                    android:layout_height="31px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="34px"
+                    app:sb_background="@color/sb_background"
+                    app:sb_button_color="@color/white"
+                    app:sb_checked_color="@color/sb_checked_color"
+                    app:sb_show_indicator="false" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lr_external_pipeline_broken"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="38px"
+                android:layout_marginTop="33px"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/lr_maintain_appearance_check">
+
+
+                <TextView
+                    android:id="@+id/tv_external_pipeline_broken"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/external_pipeline_broken"
+                    android:textColor="@color/maintain_form_second"
+                    android:textSize="@dimen/maintain_form_second_size" />
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/sb_external_pipeline_broken"
+                    android:layout_width="69px"
+                    android:layout_height="31px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12px"
+                    app:sb_background="@color/sb_background"
+                    app:sb_button_color="@color/white"
+                    app:sb_checked_color="@color/sb_checked_color"
+                    app:sb_show_indicator="false" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_maintain_door_body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="33px"
+                android:text="开门机构"
+                android:textColor="@color/black"
+                android:textSize="@dimen/maintain_form_first_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lr_external_pipeline_broken" />
+
+
+            <LinearLayout
+                android:id="@+id/lr_maintain_door_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36px"
+                android:layout_marginTop="29px"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/tv_maintain_door_body">
+
+                <TextView
+                    android:id="@+id/tv_door_glass_bottle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/door_glass_bottle"
+                    android:textColor="@color/maintain_form_second"
+                    android:textSize="@dimen/maintain_form_second_size" />
+
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/sb_door_glass_bottle"
+                    android:layout_width="69px"
+                    android:layout_height="31px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="66px"
+                    app:sb_background="@color/sb_background"
+                    app:sb_button_color="@color/white"
+                    app:sb_checked_color="@color/sb_checked_color"
+                    app:sb_show_indicator="false" />
+
+
+                <TextView
+                    android:id="@+id/tv_door_plastic_bottle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="76px"
+                    android:text="@string/door_plastic_bottle"
+                    android:textColor="@color/maintain_form_second"
+                    android:textSize="@dimen/maintain_form_second_size" />
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/sb_door_plastic_bottle"
+                    android:layout_width="69px"
+                    android:layout_height="31px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="34px"
+                    app:sb_background="@color/sb_background"
+                    app:sb_button_color="@color/white"
+                    app:sb_checked_color="@color/sb_checked_color"
+                    app:sb_show_indicator="false" />
+
+
+                <TextView
+                    android:id="@+id/tv_door_paper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="57px"
+                    android:text="@string/door_paper"
+                    android:textColor="@color/maintain_form_second"
+                    android:textSize="@dimen/maintain_form_second_size" />
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/sb_door_paper"
+                    android:layout_width="69px"
+                    android:layout_height="31px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="35px"
+                    app:sb_background="@color/sb_background"
+                    app:sb_button_color="@color/white"
+                    app:sb_checked_color="@color/sb_checked_color"
+                    app:sb_show_indicator="false" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lr_maintain_door_body_second"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36px"
+                android:layout_marginTop="35px"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/lr_maintain_door_body">
+
+                <TextView
+                    android:id="@+id/tv_door_spin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/door_door_spin"
+                    android:textColor="@color/maintain_form_second"
+                    android:textSize="@dimen/maintain_form_second_size" />
+
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/sb_door_spin"
+                    android:layout_width="69px"
+                    android:layout_height="31px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="66px"
+                    app:sb_background="@color/sb_background"
+                    app:sb_button_color="@color/white"
+                    app:sb_checked_color="@color/sb_checked_color"
+                    app:sb_show_indicator="false" />
+
+
+                <TextView
+                    android:id="@+id/tv_door_metal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="76px"
+                    android:text="金属柜门"
+                    android:textColor="@color/maintain_form_second"
+                    android:textSize="@dimen/maintain_form_second_size" />
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/sb_door_metal"
+                    android:layout_width="69px"
+                    android:layout_height="31px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="34px"
+                    app:sb_background="@color/sb_background"
+                    app:sb_button_color="@color/white"
+                    app:sb_checked_color="@color/sb_checked_color"
+                    app:sb_show_indicator="false" />
+
+
+                <TextView
+                    android:id="@+id/tv_door_plastic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="57px"
+                    android:text="@string/door_plastic"
+                    android:textColor="@color/maintain_form_second"
+                    android:textSize="@dimen/maintain_form_second_size" />
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/sb_door_plastic"
+                    android:layout_width="69px"
+                    android:layout_height="31px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="7px"
+                    app:sb_background="@color/sb_background"
+                    app:sb_button_color="@color/white"
+                    app:sb_checked_color="@color/sb_checked_color"
+                    app:sb_show_indicator="false" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_maintain_drive_institution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="37px"
+                android:text="传动机构"
+                android:textColor="@color/black"
+                android:textSize="@dimen/maintain_form_first_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lr_maintain_door_body_second" />
+
+
+            <LinearLayout
+                android:id="@+id/lr_maintain_drive_institution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36px"
+                android:layout_marginTop="25px"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/tv_maintain_drive_institution">
+
+                <TextView
+                    android:id="@+id/tv_door_glass_drive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/door_glass_drive"
+                    android:textColor="@color/maintain_form_second"
+                    android:textSize="@dimen/maintain_form_second_size" />
+
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/sb_door_glass_drive"
+                    android:layout_width="69px"
+                    android:layout_height="31px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="36px"
+                    app:sb_background="@color/sb_background"
+                    app:sb_button_color="@color/white"
+                    app:sb_checked_color="@color/sb_checked_color"
+                    app:sb_show_indicator="false" />
+
+
+                <TextView
+                    android:id="@+id/tv_door_plastic_drive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="66px"
+                    android:text="@string/door_plastic_drive"
+                    android:textColor="@color/maintain_form_second"
+                    android:textSize="@dimen/maintain_form_second_size" />
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/sb_door_plastic_drive"
+                    android:layout_width="69px"
+                    android:layout_height="31px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="14px"
+                    app:sb_background="@color/sb_background"
+                    app:sb_button_color="@color/white"
+                    app:sb_checked_color="@color/sb_checked_color"
+                    app:sb_show_indicator="false" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_maintain_infrared_detection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36px"
+                android:text="红外检测"
+                android:textColor="@color/black"
+                android:textSize="@dimen/maintain_form_first_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lr_maintain_drive_institution" />
+
+
+            <LinearLayout
+                android:id="@+id/lr_maintain_infrared_detection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36px"
+                android:layout_marginTop="30px"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/tv_maintain_infrared_detection">
+
+                <TextView
+                    android:id="@+id/tv_infrared_detection_bottle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/infrared_detection_bottle"
+                    android:textColor="@color/maintain_form_second"
+                    android:textSize="@dimen/maintain_form_second_size" />
+
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/sb_infrared_detection_bottle"
+                    android:layout_width="69px"
+                    android:layout_height="31px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="121px"
+                    app:sb_background="@color/sb_background"
+                    app:sb_button_color="@color/white"
+                    app:sb_checked_color="@color/sb_checked_color"
+                    app:sb_show_indicator="false" />
+
+
+                <TextView
+                    android:id="@+id/tv_infrared_detection_paper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75px"
+                    android:text="@string/infrared_detection_paper"
+                    android:textColor="@color/maintain_form_second"
+                    android:textSize="@dimen/maintain_form_second_size" />
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/sb_infrared_detection_paper"
+                    android:layout_width="69px"
+                    android:layout_height="31px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="88px"
+                    app:sb_background="@color/sb_background"
+                    app:sb_button_color="@color/white"
+                    app:sb_checked_color="@color/sb_checked_color"
+                    app:sb_show_indicator="false" />
+
+                <TextView
+                    android:id="@+id/tv_infrared_detection_spin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="57px"
+                    android:text="@string/infrared_detection_spin"
+                    android:textColor="@color/maintain_form_second"
+                    android:textSize="@dimen/maintain_form_second_size" />
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/sb_infrared_detection_spin"
+                    android:layout_width="69px"
+                    android:layout_height="31px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="89px"
+                    app:sb_background="@color/sb_background"
+                    app:sb_button_color="@color/white"
+                    app:sb_checked_color="@color/sb_checked_color"
+                    app:sb_show_indicator="false" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lr_maintain_infrared_detection_second"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36px"
+                android:layout_marginTop="34px"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/lr_maintain_infrared_detection">
+
+                <TextView
+                    android:id="@+id/tv_infrared_detection_metal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/infrared_detection_metal"
+                    android:textColor="@color/maintain_form_second"
+                    android:textSize="@dimen/maintain_form_second_size" />
+
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/sb_infrared_detection_metal"
+                    android:layout_width="69px"
+                    android:layout_height="31px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="121px"
+                    app:sb_background="@color/sb_background"
+                    app:sb_button_color="@color/white"
+                    app:sb_checked_color="@color/sb_checked_color"
+                    app:sb_show_indicator="false" />
+
+
+                <TextView
+                    android:id="@+id/tv_infrared_detection_plastic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75px"
+                    android:text="@string/infrared_detection_plastic"
+                    android:textColor="@color/maintain_form_second"
+                    android:textSize="@dimen/maintain_form_second_size" />
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/sb_infrared_detection_plastic"
+                    android:layout_width="69px"
+                    android:layout_height="31px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="88px"
+                    app:sb_background="@color/sb_background"
+                    app:sb_button_color="@color/white"
+                    app:sb_checked_color="@color/sb_checked_color"
+                    app:sb_show_indicator="false" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_maintain_fun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44px"
+                android:text="风扇"
+                android:textColor="@color/black"
+                android:textSize="@dimen/maintain_form_first_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lr_maintain_infrared_detection_second" />
+
+
+            <LinearLayout
+                android:id="@+id/lr_maintain_fun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36px"
+                android:layout_marginTop="29px"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/tv_maintain_fun">
+
+                <TextView
+                    android:id="@+id/tv_maintain_fun_host"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/maintain_fun_host"
+                    android:textColor="@color/maintain_form_second"
+                    android:textSize="@dimen/maintain_form_second_size" />
+
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/sb_maintain_fun_host"
+                    android:layout_width="69px"
+                    android:layout_height="31px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="93px"
+                    app:sb_background="@color/sb_background"
+                    app:sb_button_color="@color/white"
+                    app:sb_checked_color="@color/sb_checked_color"
+                    app:sb_show_indicator="false" />
+
+
+                <TextView
+                    android:id="@+id/tv_maintain_fun_paper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75px"
+                    android:text="@string/maintain_fun_paper"
+                    android:textColor="@color/maintain_form_second"
+                    android:textSize="@dimen/maintain_form_second_size" />
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/sb_maintain_fun_paper"
+                    android:layout_width="69px"
+                    android:layout_height="31px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="61px"
+                    app:sb_background="@color/sb_background"
+                    app:sb_button_color="@color/white"
+                    app:sb_checked_color="@color/sb_checked_color"
+                    app:sb_show_indicator="false" />
+
+                <TextView
+                    android:id="@+id/tv_maintain_fun_spin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="57px"
+                    android:text="@string/maintain_fun_spin"
+                    android:textColor="@color/maintain_form_second"
+                    android:textSize="@dimen/maintain_form_second_size" />
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/sb_maintain_fun_spin"
+                    android:layout_width="69px"
+                    android:layout_height="31px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="61px"
+                    app:sb_background="@color/sb_background"
+                    app:sb_button_color="@color/white"
+                    app:sb_checked_color="@color/sb_checked_color"
+                    app:sb_show_indicator="false" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lr_maintain_fun_second"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36px"
+                android:layout_marginTop="34px"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/lr_maintain_fun">
+
+                <TextView
+                    android:id="@+id/tv_maintain_fun_metal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/maintain_fun_metal"
+                    android:textColor="@color/maintain_form_second"
+                    android:textSize="@dimen/maintain_form_second_size" />
+
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/sb_maintain_fun_metal"
+                    android:layout_width="69px"
+                    android:layout_height="31px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="93px"
+                    app:sb_background="@color/sb_background"
+                    app:sb_button_color="@color/white"
+                    app:sb_checked_color="@color/sb_checked_color"
+                    app:sb_show_indicator="false" />
+
+
+                <TextView
+                    android:id="@+id/tv_maintain_fun_plastic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75px"
+                    android:text="@string/maintain_fun_plastic"
+                    android:textColor="@color/maintain_form_second"
+                    android:textSize="@dimen/maintain_form_second_size" />
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/sb_maintain_fun_plastic"
+                    android:layout_width="69px"
+                    android:layout_height="31px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5px"
+                    app:sb_background="@color/sb_background"
+                    app:sb_button_color="@color/white"
+                    app:sb_checked_color="@color/sb_checked_color"
+                    app:sb_show_indicator="false" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_maintain_lamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35px"
+                android:text="灯带灯箱"
+                android:textColor="@color/black"
+                android:textSize="@dimen/maintain_form_first_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lr_maintain_fun_second" />
+
+
+            <LinearLayout
+                android:id="@+id/lr_maintain_lamp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35px"
+                android:layout_marginTop="29px"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/tv_maintain_lamp">
+
+                <TextView
+                    android:id="@+id/tv_maintain_lamp_host"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/maintain_lamp_host"
+                    android:textColor="@color/maintain_form_second"
+                    android:textSize="@dimen/maintain_form_second_size" />
+
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/sb_maintain_lamp_host"
+                    android:layout_width="69px"
+                    android:layout_height="31px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="93px"
+                    app:sb_background="@color/sb_background"
+                    app:sb_button_color="@color/white"
+                    app:sb_checked_color="@color/sb_checked_color"
+                    app:sb_show_indicator="false" />
+
+
+                <TextView
+                    android:id="@+id/tv_maintain_lamp_paper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75px"
+                    android:text="@string/maintain_lamp_paper"
+                    android:textColor="@color/maintain_form_second"
+                    android:textSize="@dimen/maintain_form_second_size" />
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/sb_maintain_lamp_paper"
+                    android:layout_width="69px"
+                    android:layout_height="31px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="63px"
+                    app:sb_background="@color/sb_background"
+                    app:sb_button_color="@color/white"
+                    app:sb_checked_color="@color/sb_checked_color"
+                    app:sb_show_indicator="false" />
+
+                <TextView
+                    android:id="@+id/tv_maintain_lamp_spin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="57px"
+                    android:text="@string/maintain_lamp_spin"
+                    android:textColor="@color/maintain_form_second"
+                    android:textSize="@dimen/maintain_form_second_size" />
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/sb_maintain_lamp_spin"
+                    android:layout_width="69px"
+                    android:layout_height="31px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="61px"
+                    app:sb_background="@color/sb_background"
+                    app:sb_button_color="@color/white"
+                    app:sb_checked_color="@color/sb_checked_color"
+                    app:sb_show_indicator="false" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lr_maintain_lamp_second"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35px"
+                android:layout_marginTop="34px"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/lr_maintain_lamp">
+
+                <TextView
+                    android:id="@+id/tv_maintain_lamp_metal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/maintain_lamp_metal"
+                    android:textColor="@color/maintain_form_second"
+                    android:textSize="@dimen/maintain_form_second_size" />
+
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/sb_maintain_lamp_metal"
+                    android:layout_width="69px"
+                    android:layout_height="31px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="93px"
+                    app:sb_background="@color/sb_background"
+                    app:sb_button_color="@color/white"
+                    app:sb_checked_color="@color/sb_checked_color"
+                    app:sb_show_indicator="false" />
+
+
+                <TextView
+                    android:id="@+id/tv_maintain_lamp_plastic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75px"
+                    android:text="@string/maintain_lamp_plastic"
+                    android:textColor="@color/maintain_form_second"
+                    android:textSize="@dimen/maintain_form_second_size" />
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/sb_maintain_lamp_plastic"
+                    android:layout_width="69px"
+                    android:layout_height="31px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5px"
+                    app:sb_background="@color/sb_background"
+                    app:sb_button_color="@color/white"
+                    app:sb_checked_color="@color/sb_checked_color"
+                    app:sb_show_indicator="false" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_maintain_lock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="46px"
+                android:text="柜门电磁锁"
+                android:textColor="@color/black"
+                android:textSize="@dimen/maintain_form_first_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lr_maintain_lamp_second" />
+
+
+            <LinearLayout
+                android:id="@+id/lr_maintain_lock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35px"
+                android:layout_marginTop="30px"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/tv_maintain_lock">
+
+                <TextView
+                    android:id="@+id/tv_maintain_lock_host"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/maintain_lock_host"
+                    android:textColor="@color/maintain_form_second"
+                    android:textSize="@dimen/maintain_form_second_size" />
+
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/sb_maintain_lock_host"
+                    android:layout_width="69px"
+                    android:layout_height="31px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="38px"
+                    app:sb_background="@color/sb_background"
+                    app:sb_button_color="@color/white"
+                    app:sb_checked_color="@color/sb_checked_color"
+                    app:sb_show_indicator="false" />
+
+
+                <TextView
+                    android:id="@+id/tv_maintain_lock_paper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="75px"
+                    android:text="@string/maintain_lock_paper"
+                    android:textColor="@color/maintain_form_second"
+                    android:textSize="@dimen/maintain_form_second_size" />
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/sb_maintain_lock_paper"
+                    android:layout_width="69px"
+                    android:layout_height="31px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="63px"
+                    app:sb_background="@color/sb_background"
+                    app:sb_button_color="@color/white"
+                    app:sb_checked_color="@color/sb_checked_color"
+                    app:sb_show_indicator="false" />
+
+                <TextView
+                    android:id="@+id/tv_maintain_lock_spin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="57px"
+                    android:text="@string/maintain_lock_spin"
+                    android:textColor="@color/maintain_form_second"
+                    android:textSize="@dimen/maintain_form_second_size" />
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/sb_maintain_lock_spin"
+                    android:layout_width="69px"
+                    android:layout_height="31px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="61px"
+                    app:sb_background="@color/sb_background"
+                    app:sb_button_color="@color/white"
+                    app:sb_checked_color="@color/sb_checked_color"
+                    app:sb_show_indicator="false" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lr_maintain_lock_second"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35px"
+                android:layout_marginTop="34px"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/lr_maintain_lock">
+
+                <TextView
+                    android:id="@+id/tv_maintain_lock_side"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/maintain_lock_side"
+                    android:textColor="@color/maintain_form_second"
+                    android:textSize="@dimen/maintain_form_second_size" />
+
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/sb_maintain_lock_side"
+                    android:layout_width="69px"
+                    android:layout_height="31px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="123px"
+                    app:sb_background="@color/sb_background"
+                    app:sb_button_color="@color/white"
+                    app:sb_checked_color="@color/sb_checked_color"
+                    app:sb_show_indicator="false" />
+
+
+                <TextView
+                    android:id="@+id/tv_maintain_lock_metal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="76px"
+                    android:text="金属门"
+                    android:textColor="@color/maintain_form_second"
+                    android:textSize="@dimen/maintain_form_second_size" />
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/sb_maintain_lock_metal"
+                    android:layout_width="69px"
+                    android:layout_height="31px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="63px"
+                    app:sb_background="@color/sb_background"
+                    app:sb_button_color="@color/white"
+                    app:sb_checked_color="@color/sb_checked_color"
+                    app:sb_show_indicator="false" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_maintain_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48px"
+                android:text="显示屏触摸"
+                android:textColor="@color/black"
+                android:textSize="@dimen/maintain_form_first_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lr_maintain_lock_second" />
+
+
+            <LinearLayout
+                android:id="@+id/lr_maintain_screen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35px"
+                android:layout_marginTop="29px"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/tv_maintain_screen">
+
+                <TextView
+                    android:id="@+id/tv_maintain_screen_calibration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/maintain_screen_calibration"
+                    android:textColor="@color/maintain_form_second"
+                    android:textSize="@dimen/maintain_form_second_size" />
+
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/sb_maintain_screen"
+                    android:layout_width="69px"
+                    android:layout_height="31px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="64px"
+                    app:sb_background="@color/sb_background"
+                    app:sb_button_color="@color/white"
+                    app:sb_checked_color="@color/sb_checked_color"
+                    app:sb_show_indicator="false" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_maintain_ammeter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48px"
+                android:text="电表读数"
+                android:textColor="@color/black"
+                android:textSize="@dimen/maintain_form_first_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lr_maintain_screen" />
+
+
+            <LinearLayout
+                android:id="@+id/lr_maintain_ammeter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35px"
+                android:layout_marginTop="29px"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/tv_maintain_ammeter">
+
+                <TextView
+                    android:id="@+id/tv_maintain_ammeter_read"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/maintain_ammeter_read"
+                    android:textColor="@color/maintain_form_second"
+                    android:textSize="@dimen/maintain_form_second_size" />
+
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/sb_maintain_ammeter"
+                    android:layout_width="69px"
+                    android:layout_height="31px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="64px"
+                    app:sb_background="@color/sb_background"
+                    app:sb_button_color="@color/white"
+                    app:sb_checked_color="@color/sb_checked_color"
+                    app:sb_show_indicator="false" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_maintain_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48px"
+                android:text="摄像头"
+                android:textColor="@color/black"
+                android:textSize="@dimen/maintain_form_first_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lr_maintain_ammeter" />
+
+
+            <LinearLayout
+                android:id="@+id/lr_maintain_camera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35px"
+                android:layout_marginTop="29px"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/tv_maintain_camera">
+
+                <TextView
+                    android:id="@+id/tv_front_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/front_camera"
+                    android:textColor="@color/maintain_form_second"
+                    android:textSize="@dimen/maintain_form_second_size" />
+
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/sb_front_camera"
+                    android:layout_width="69px"
+                    android:layout_height="31px"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="35px"
+                    app:sb_background="@color/sb_background"
+                    app:sb_button_color="@color/white"
+                    app:sb_checked_color="@color/sb_checked_color"
+                    app:sb_show_indicator="false" />
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_maintain_note"
+                android:layout_width="863px"
+                android:layout_height="280px"
+                android:layout_marginTop="61px"
+                android:background="@drawable/shape_maintain_note"
+                android:gravity="top"
+                android:hint="备注:(故障原因，维修尝试等)"
+                android:inputType="textMultiLine"
+                android:maxLength="174"
+                android:paddingLeft="30px"
+                android:paddingTop="30px"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="28px"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lr_maintain_camera" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </com.tlh.android.widget.MyScrollView>
+
+    <TextView
+        android:id="@+id/tv_maintain_form_finish"
+        android:layout_width="367px"
+        android:layout_height="114px"
+        android:layout_marginLeft="120px"
+        android:layout_marginBottom="403px"
+        android:background="@drawable/sec_btn_theme_bg"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/tv_theme_color"
+        android:textSize="38px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_maintain_form_cancel"
+        android:layout_width="367px"
+        android:layout_height="114px"
+        android:layout_marginRight="120px"
+        android:layout_marginBottom="403px"
+        android:background="@drawable/sec_btn_theme_bg"
+        android:gravity="center"
+        android:text="返回"
+        android:textColor="@color/tv_theme_color"
+        android:textSize="38px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

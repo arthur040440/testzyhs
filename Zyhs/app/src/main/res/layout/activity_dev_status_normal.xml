@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_dev_wifi_status">
+
+    <include layout="@layout/page_head_logo" />
+
+    <View
+        android:layout_width="858px"
+        android:layout_height="1170px"
+        android:layout_marginTop="280px"
+        android:background="@drawable/dialog_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/dev_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="176px"
+        android:layout_marginTop="383px"
+        android:textColor="@color/black"
+        android:textSize="24px"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="编号：20181281283456" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/dev_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170px"
+        android:layout_marginTop="430px"
+        android:textColor="@color/black"
+        android:textSize="32px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="浙江省杭州市余杭区贝易物联01号机" />
+
+    <View
+        android:layout_width="720px"
+        android:layout_height="1px"
+        android:layout_marginTop="503px"
+        android:background="#E5E5E5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.tlh.android.widget.ImageTextButton
+        android:id="@+id/itb_dev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_logo_top"
+        android:layout_marginLeft="246px"
+        android:layout_marginTop="543px"
+        android:layout_marginRight="246px"
+        android:gravity="center"
+        android:textColor="#010101"
+        android:textSize="38px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:leftDrawable="@mipmap/ic_left_fish"
+        app:rightDrawable="@mipmap/ic_right_fish"
+        tools:text="柜门异常" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_back"
+        android:layout_width="734px"
+        android:layout_height="114px"
+        android:layout_marginBottom="552px"
+        android:background="@drawable/sec_btn_theme_bg"
+        android:gravity="center"
+        android:text="返回"
+        android:textColor="@color/black"
+        android:textSize="38px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</merge>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--主题颜色设置-->
+    <!--饿了么主题色start-->
+    <color name="theme_color">#3BC7EB</color>
+    <color name="face_color_round">#0099F9</color>
+    <color name="face_color_ring">#FFffc600</color>
+    <color name="colorAccent">#FFffc600</color>
+    <color name="theme_color_press">#35B2D2</color>
+    <color name="track_bg_check">#adadad</color>
+    <color name="tv_coupons_prompt">#FDAD02</color>
+    <color name="tv_theme_color">#FFFFFF</color>
+    <color name="sb_checked_color">#3BC7EB</color>
+    <color name="tv_coupons_color">#3BC7EB</color>
+    <!--饿了么主题色end-->
+</resources>

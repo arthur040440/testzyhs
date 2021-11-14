@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_screen_other_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:layout_marginTop="10px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_user_logo"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_marginLeft="40px"
+            android:adjustViewBounds="true"
+            android:background="@mipmap/ic_user_fault_logo"
+            android:scaleType="fitXY" />
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="29px"
+            android:text="@string/octopus_guest"
+            android:textColor="@color/nick_color"
+            android:textSize="20px" />
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:id="@+id/tv_dev_code"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="40px"
+            android:layout_marginBottom="10px"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:maxEms="40"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="20px"
+            android:visibility="gone"
+            tools:text="NO.ABC_20181024_SP7567 贝利集团" />
+    </LinearLayout>
+
+    <include layout="@layout/page_head_logo" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200px"
+        android:textColor="@color/black"
+        android:textSize="28px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="2018-07-01  12：00" />
+
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_name_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15px"
+        android:gravity="center"
+        android:text="贝利集团"
+        android:textColor="@color/black"
+        android:textSize="25px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_time" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_point_description"
+        android:layout_width="600px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15px"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="贝利集团"
+        android:textColor="@color/black"
+        android:textSize="25px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name_company" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="109px"
+        android:layout_marginTop="350px"
+        android:layout_marginRight="109px"
+        android:background="@drawable/dialog_maintain_bg"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.tlh.android.widget.ImageTextButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="252px"
+            android:layout_marginTop="63px"
+            android:layout_marginRight="252px"
+            android:gravity="center_horizontal"
+            android:text="@string/function_self_check"
+            android:textColor="@color/black"
+            android:textSize="38px"
+            app:leftDrawable="@mipmap/ic_left_fish"
+            app:rightDrawable="@mipmap/ic_right_fish" />
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            app:flexDirection="row"
+            app:flexWrap="wrap">
+
+            <com.tlh.android.widget.NoPaddingTextView
+                android:id="@+id/tv_cabinet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75px"
+                android:layout_marginRight="75px"
+                android:layout_marginBottom="41px"
+                android:drawableLeft="@mipmap/ic_maintain_ok"
+                android:drawablePadding="10px"
+                android:gravity="center"
+                android:text="@string/gm"
+                android:textColor="@color/black"
+                android:textSize="34px" />
+
+            <com.tlh.android.widget.NoPaddingTextView
+                android:id="@+id/tv_sx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75px"
+                android:layout_marginRight="75px"
+                android:layout_marginBottom="41px"
+                android:drawableLeft="@mipmap/ic_maintain_ok"
+                android:drawablePadding="10px"
+                android:gravity="center"
+                android:text="@string/sx"
+                android:textColor="@color/black"
+                android:textSize="34px" />
+
+            <com.tlh.android.widget.NoPaddingTextView
+                android:id="@+id/tv_fun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75px"
+                android:layout_marginRight="75px"
+                android:layout_marginBottom="41px"
+                android:drawableLeft="@mipmap/ic_maintain_ok"
+                android:drawablePadding="10px"
+                android:gravity="center"
+                android:text="@string/fun"
+                android:textColor="@color/black"
+                android:textSize="34px" />
+
+            <com.tlh.android.widget.NoPaddingTextView
+                android:id="@+id/tv_xd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75px"
+                android:layout_marginRight="75px"
+                android:drawableLeft="@mipmap/ic_maintain_ok"
+                android:drawablePadding="10px"
+                android:gravity="center"
+                android:text="@string/xd"
+                android:textColor="@color/black"
+                android:textSize="34px" />
+
+            <com.tlh.android.widget.NoPaddingTextView
+                android:id="@+id/tv_lamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75px"
+                android:layout_marginRight="75px"
+                android:drawableLeft="@mipmap/ic_maintain_ok"
+                android:drawablePadding="10px"
+                android:gravity="center"
+                android:text="@string/lamp"
+                android:textColor="@color/black"
+                android:textSize="34px" />
+
+            <com.tlh.android.widget.NoPaddingTextView
+                android:id="@+id/tv_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75px"
+                android:layout_marginRight="75px"
+                android:drawableLeft="@mipmap/ic_maintain_ok"
+                android:drawablePadding="10px"
+                android:gravity="center"
+                android:text="@string/temperature"
+                android:textColor="@color/black"
+                android:textSize="34px" />
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <com.tlh.android.widget.ImageTextButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="252px"
+            android:layout_marginTop="63px"
+            android:layout_marginRight="252px"
+            android:gravity="center_horizontal"
+            android:text="@string/function_system_check"
+            android:textColor="@color/black"
+            android:textSize="38px"
+            app:leftDrawable="@mipmap/ic_left_fish"
+            app:rightDrawable="@mipmap/ic_right_fish" />
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/ll_throw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            app:flexDirection="row"
+            app:flexWrap="wrap">
+
+            <com.tlh.android.widget.NoPaddingTextView
+                android:id="@+id/tv_ammeter"
+                android:layout_width="287px"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="21px"
+                android:drawableTop="@mipmap/ic_maintain_db"
+                android:gravity="center"
+                android:text="@string/db"
+                android:textColor="@color/black"
+                android:textSize="34px" />
+
+
+            <com.tlh.android.widget.NoPaddingTextView
+                android:id="@+id/tv_wifi"
+                android:layout_width="287px"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="21px"
+                android:drawableTop="@mipmap/ic_maintain_wifi"
+                android:drawablePadding="10px"
+                android:gravity="center"
+                android:text="@string/wifi"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:textSize="34px" />
+
+            <com.tlh.android.widget.NoPaddingTextView
+                android:id="@+id/tv_net"
+                android:layout_width="287px"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="21px"
+                android:drawableTop="@mipmap/ic_maintain_net"
+                android:drawablePadding="10px"
+                android:gravity="center"
+                android:text="@string/net_setting"
+                android:textColor="@color/black"
+                android:textSize="34px" />
+
+            <com.tlh.android.widget.NoPaddingTextView
+                android:id="@+id/tv_update"
+                android:layout_width="287px"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="21px"
+                android:drawableTop="@mipmap/ic_maintain_update"
+                android:drawablePadding="10px"
+                android:gravity="center"
+                android:text="@string/app_update"
+                android:textColor="@color/black"
+                android:textSize="34px" />
+
+            <com.tlh.android.widget.NoPaddingTextView
+                android:id="@+id/tv_setting"
+                android:layout_width="287px"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="21px"
+                android:drawableTop="@mipmap/ic_setting_init"
+                android:drawablePadding="10px"
+                android:gravity="center"
+                android:text="@string/location_setting"
+                android:textColor="@color/black"
+                android:textSize="34px" />
+
+            <com.tlh.android.widget.NoPaddingTextView
+                android:id="@+id/tv_sys_setting"
+                android:layout_width="287px"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="21px"
+                android:drawableTop="@mipmap/ic_maintain_sys"
+                android:drawablePadding="10px"
+                android:gravity="center"
+                android:text="@string/sys_setting"
+                android:textColor="@color/black"
+                android:textSize="34px" />
+
+            <com.tlh.android.widget.NoPaddingTextView
+                android:id="@+id/tv_res_save"
+                android:layout_width="287px"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="21px"
+                android:drawableTop="@mipmap/ic_maintain_banner"
+                android:drawablePadding="10px"
+                android:gravity="center"
+                android:text="@string/banner_res_save"
+                android:textColor="@color/black"
+                android:textSize="34px" />
+
+            <com.tlh.android.widget.NoPaddingTextView
+                android:id="@+id/tv_pcb_update"
+                android:layout_width="287px"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="21px"
+                android:clickable="true"
+                android:drawableTop="@mipmap/ic_maintain_update"
+                android:drawablePadding="10px"
+                android:gravity="center"
+                android:text="@string/pcb_update"
+                android:textColor="@color/black"
+                android:textSize="34px" />
+
+            <com.tlh.android.widget.NoPaddingTextView
+                android:id="@+id/tv_res_test"
+                android:layout_width="287px"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="21px"
+                android:clickable="true"
+                android:drawableTop="@mipmap/ic_maintain_test"
+                android:drawablePadding="10px"
+                android:gravity="center"
+                android:text="@string/banner_res_test"
+                android:textColor="@color/black"
+                android:textSize="34px" />
+
+            <com.tlh.android.widget.NoPaddingTextView
+                android:id="@+id/tv_inspection"
+                android:layout_width="287px"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="21px"
+                android:clickable="true"
+                android:drawableTop="@mipmap/ic_maintain_inspection"
+                android:drawablePadding="10px"
+                android:gravity="center"
+                android:text="@string/banner_res_inspection"
+                android:textColor="@color/black"
+                android:textSize="34px" />
+
+            <TextView
+                android:id="@+id/tv_polling_test"
+                android:layout_width="287px"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="21px"
+                android:drawableTop="@mipmap/ic_maintain_test"
+                android:drawablePadding="10px"
+                android:gravity="center"
+                android:text="@string/polling_test"
+                android:textColor="@color/black"
+                android:textSize="34px"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_polling_test2"
+                android:layout_width="287px"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="21px"
+                android:drawableTop="@mipmap/ic_maintain_test"
+                android:drawablePadding="10px"
+                android:gravity="center"
+                android:text="@string/polling_test_door"
+                android:textColor="@color/black"
+                android:textSize="34px"
+                android:visibility="gone" />
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_images_eg"
+        android:layout_width="244px"
+        android:layout_height="185px"
+        android:layout_marginLeft="168px"
+        android:layout_marginBottom="123px"
+        android:src="@mipmap/ic_maintain_eg"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/tv_self_check"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32px"
+        android:layout_marginBottom="228px"
+        android:text="@string/images_eg"
+        android:textColor="@color/black"
+        android:textSize="34px"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/tv_self_check"
+        app:layout_constraintLeft_toRightOf="@id/iv_images_eg" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120px"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/tv_self_check"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_maintain_ok"
+            android:drawablePadding="18px"
+            android:gravity="center"
+            android:text="@string/images_eg_ok"
+            android:textColor="@color/black"
+            android:textSize="28px" />
+
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32px"
+            android:drawableLeft="@mipmap/ic_maintain_exception"
+            android:drawablePadding="18px"
+            android:gravity="center"
+            android:text="@string/images_eg_exception"
+            android:textColor="@color/black"
+            android:textSize="28px" />
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32px"
+            android:drawableLeft="@mipmap/ic_maintain_x"
+            android:drawablePadding="18px"
+            android:gravity="center"
+            android:text="@string/images_eg_bad"
+            android:textColor="@color/black"
+            android:textSize="28px" />
+
+    </LinearLayout>
+
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_self_check"
+        android:layout_width="300px"
+        android:layout_height="100px"
+        android:layout_marginRight="47px"
+        android:layout_marginBottom="427px"
+        android:background="@drawable/sec_btn_theme_bg"
+        android:gravity="center"
+        android:text="系统自检"
+        android:textColor="@color/tv_theme_color"
+        android:textSize="38px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle='packed'
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tv_logout" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_logout"
+        android:layout_width="300px"
+        android:layout_height="100px"
+        android:layout_marginBottom="427px"
+        android:background="@drawable/sec_btn_theme_bg"
+        android:gravity="center"
+        android:text="退出登录"
+        android:textColor="@color/tv_theme_color"
+        android:textSize="38px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle='packed'
+        app:layout_constraintLeft_toRightOf="@id/tv_self_check"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

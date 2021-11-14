@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hm_ctl_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_screen_bg">
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35px"
+        android:layout_marginTop="26px"
+        android:maxEms="40"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="20px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="NO.ABC_20181024_SP7567 贝利集团" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26px"
+        android:layout_marginRight="35px"
+        android:textColor="@color/black"
+        android:textSize="20px"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="15:30:26  周一" />
+
+    <include layout="@layout/page_head_logo" />
+
+    <include layout="@layout/page_head_cutdown_time" />
+
+    <include
+        layout="@layout/activity_home_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="181px"
+        app:layout_constraintTop_toBottomOf="@id/iv_logo_top" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35px"
+        android:layout_marginRight="20px"
+        android:layout_marginBottom="20px"
+        android:textColor="@color/black_home_page_tip"
+        android:textSize="20px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:text="version1.0.0" />
+
+    <com.tlh.android.widget.BubbleLayout
+        android:id="@+id/bubble"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</android.support.constraint.ConstraintLayout>

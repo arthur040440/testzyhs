@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="858px"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical">
+
+    <com.tlh.android.widget.ImageTextButton
+        android:id="@+id/ll_welcome_use"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_logo_top"
+        android:layout_marginLeft="141px"
+        android:layout_marginRight="141px"
+        android:layout_marginTop="143px"
+        android:text="路由器设置"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        android:textSize="38px"
+        custom:leftDrawable="@mipmap/ic_left_fish"
+        custom:rightDrawable="@mipmap/ic_right_fish"/>
+
+    <EditText
+        android:id="@+id/et_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="50px"
+        android:hint="输入账号"
+        android:singleLine="true"
+        android:textSize="38px"
+        android:background="#20999999"
+        android:padding="25px" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="50px"
+        android:hint="输入密码"
+        android:singleLine="true"
+        android:background="#20999999"
+        android:textSize="38px"
+        android:padding="25px" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_login"
+        android:layout_width="match_parent"
+        android:layout_height="114px"
+        android:background="@drawable/sec_btn_theme_bg"
+        android:gravity="center"
+        android:text="登录"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:textColor="@color/black"
+        android:layout_marginTop="40px"
+        android:layout_marginBottom="120px"
+        android:textSize="38px" />
+
+</LinearLayout>
+
+

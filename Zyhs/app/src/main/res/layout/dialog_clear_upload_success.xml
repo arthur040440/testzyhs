@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="858px"
+    android:layout_height="1170px"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="280px"
+    android:layout_marginBottom="467px"
+    android:background="@drawable/dialog_bg">
+
+
+    <com.tlh.android.widget.ImageTextButton
+        android:id="@+id/itb_title_clear_upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="141px"
+        android:layout_marginTop="144px"
+        android:layout_marginRight="141px"
+        android:gravity="center"
+        android:text="上传清运单"
+        android:textColor="@color/black"
+        android:textSize="38px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:leftDrawable="@mipmap/ic_left_fish"
+        app:rightDrawable="@mipmap/ic_right_fish" />
+
+
+    <ImageView
+        android:id="@+id/iv_clear_qrcode"
+        android:layout_width="359px"
+        android:layout_height="419px"
+        android:layout_marginTop="97px"
+        android:src="@mipmap/ic_maintain"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itb_title_clear_upload" />
+
+
+    <TextView
+        android:id="@+id/tv_clear_success_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75px"
+        android:gravity="center"
+        android:text="@string/clear_upload_success"
+        android:textColor="@color/black"
+        android:textSize="40px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_clear_qrcode" />
+
+
+    <TextView
+        android:id="@+id/tv_clear_success_confirm"
+        android:layout_width="442px"
+        android:layout_height="100px"
+        android:layout_marginBottom="125px"
+        android:background="@drawable/sec_btn_theme_bg"
+        android:gravity="center"
+        android:text="确认"
+        android:textColor="@color/tv_theme_color"
+        android:textSize="38px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

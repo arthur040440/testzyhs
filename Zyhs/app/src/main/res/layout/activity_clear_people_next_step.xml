@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_screen_other_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:layout_marginTop="10px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_user_logo"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_marginLeft="40px"
+            android:adjustViewBounds="true"
+            android:background="@mipmap/ic_user_fault_logo"
+            android:scaleType="fitXY" />
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="29px"
+            android:text="@string/octopus_guest"
+            android:textColor="@color/nick_color"
+            android:textSize="20px" />
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:id="@+id/tv_dev_code"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="40px"
+            android:layout_marginBottom="10px"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:maxEms="40"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="20px"
+            android:visibility="gone"
+            tools:text="NO.ABC_20181024_SP7567 贝利集团" />
+    </LinearLayout>
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_countdown_time"
+        android:layout_width="230px"
+        android:layout_height="75px"
+        android:layout_marginTop="95px"
+        android:layout_marginRight="39px"
+        android:background="@mipmap/ic_cutdown_time_bg"
+        android:paddingLeft="108px"
+        android:paddingTop="10px"
+        android:textColor="@color/black_171717"
+        android:textSize="38px"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="60s"
+        tools:visibility="visible" />
+
+    <include layout="@layout/page_head_logo" />
+
+    <ImageView
+        android:id="@+id/iv_zhys"
+        android:layout_width="359px"
+        android:layout_height="419px"
+        android:layout_marginTop="452px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@mipmap/ic_maintain" />
+
+
+    <com.tlh.android.widget.ImageTextButton
+        android:id="@+id/ll_welcome_use"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_logo_top"
+        android:layout_marginLeft="252px"
+        android:layout_marginTop="74px"
+        android:layout_marginRight="252px"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:textSize="40px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_zhys"
+        app:leftDrawable="@mipmap/ic_left_fish"
+        app:rightDrawable="@mipmap/ic_right_fish"
+        tools:text="@string/current_machine_ok" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:layout_marginTop="19px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_welcome_use">
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:id="@+id/tv_default_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/tip_red"
+            android:textSize="40px"
+            android:textStyle="bold"
+            tools:text="柜门未关闭\n主机侧门没有关好\n1号纸柜门没有关好" />
+    </ScrollView>
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_logout"
+        android:layout_width="734px"
+        android:layout_height="114px"
+        android:layout_marginBottom="428px"
+        android:background="@drawable/sec_btn_theme_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/over"
+        android:textColor="@color/tv_theme_color"
+        android:textSize="38px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_self_check"
+        android:layout_width="734px"
+        android:layout_height="114px"
+        android:layout_marginBottom="552px"
+        android:background="@drawable/sec_btn_theme_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="@string/system_self_check"
+        android:textColor="@color/tv_theme_color"
+        android:textSize="38px"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:visibility="visible" />
+
+</android.support.constraint.ConstraintLayout>

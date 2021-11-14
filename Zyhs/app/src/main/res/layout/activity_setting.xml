@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_screen_bg">
+
+    <include layout="@layout/page_head_logo" />
+
+    <com.tlh.android.widget.ImageTextButton
+        android:id="@+id/ll_welcome_use"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_logo_top"
+        android:layout_marginLeft="252px"
+        android:layout_marginRight="252px"
+        android:layout_marginTop="423px"
+        android:gravity="center_horizontal"
+        android:text="请设置机器点位信息"
+        android:textColor="@color/black"
+        android:textSize="38px"
+        app:layout_constraintTop_toTopOf="parent"
+        custom:leftDrawable="@mipmap/ic_left_fish"
+        custom:rightDrawable="@mipmap/ic_right_fish" />
+
+    <com.tlh.android.widget.ImageTextButton
+        android:id="@+id/itb_init"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="47px"
+        android:layout_marginTop="96px"
+        android:drawablePadding="9px"
+        android:gravity="center"
+        android:text="初始化"
+        android:textColor="@color/black"
+        android:textSize="26px"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        custom:topDrawable="@mipmap/ic_setting_init"
+        custom:topHeight="38px"
+        custom:topWidth="39px" />
+
+    <com.tlh.android.widget.ImageTextButton
+        android:id="@+id/itb_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="59px"
+        android:layout_marginTop="100px"
+        android:drawablePadding="4px"
+        android:gravity="center"
+        android:text="网络设置"
+        android:textColor="@color/black"
+        android:textSize="26px"
+        app:layout_constraintRight_toLeftOf="@id/itb_init"
+        app:layout_constraintTop_toTopOf="parent"
+        custom:topDrawable="@mipmap/ic_maintain_net"
+        custom:topHeight="40px"
+        custom:topWidth="41px" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="1052px"
+        android:layout_height="720px"
+        android:layout_marginTop="50px"
+        android:background="@mipmap/ic_setting_location_bg"
+        app:layout_constraintTop_toBottomOf="@id/ll_welcome_use">
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:id="@+id/tv_location_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="139px"
+            android:layout_marginTop="40px"
+            android:text="点位信息："
+            android:textColor="@color/black"
+            android:textSize="32px"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/btv_location_info"
+            android:layout_width="420px"
+            android:layout_height="48px"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="40px"
+            android:background="@drawable/border_theme"
+            android:gravity="center_vertical"
+            android:hint="请输入要搜索的点位名称"
+            android:paddingLeft="10px"
+            android:singleLine="true"
+            android:includeFontPadding="false"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black_575757"
+            android:textSize="24px"
+            app:layout_constraintLeft_toRightOf="@id/tv_location_dot"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:layout_width="127px"
+            android:layout_height="46px"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="40px"
+            android:background="@drawable/sec_btn_theme_bg"
+            android:gravity="center"
+            android:text="选择"
+            android:textColor="@color/black"
+            android:textSize="24px"
+            android:visibility="gone"
+            app:layout_constraintLeft_toRightOf="@id/btv_location_info"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:id="@+id/tv_location_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="307px"
+            android:layout_marginTop="70px"
+            android:text="点位编码："
+            android:textColor="@color/black"
+            android:textSize="26px"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btv_location_info" />
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:id="@+id/tv_zone_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="307px"
+            android:layout_marginTop="79px"
+            android:text="小区名称："
+            android:textColor="@color/black"
+            android:textSize="26px"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_location_code" />
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:id="@+id/tv_address_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="307px"
+            android:layout_marginTop="81px"
+            android:text="点位地址："
+            android:textColor="@color/black"
+            android:textSize="26px"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_zone_name" />
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:id="@+id/tv_address"
+            android:layout_width="285px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="81px"
+            android:textColor="@color/black"
+            android:textSize="26px"
+            app:layout_constraintLeft_toRightOf="@id/tv_address_des"
+            app:layout_constraintTop_toBottomOf="@id/tv_zone_name" />
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:id="@+id/tv_dev_code_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="307px"
+            android:layout_marginTop="49px"
+            android:text="设备编码："
+            android:textColor="@color/black"
+            android:textSize="26px"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_address" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="250px"
+            android:layout_marginTop="49px"
+            app:layout_constraintLeft_toRightOf="@id/tv_dev_code_des"
+            app:layout_constraintTop_toBottomOf="@id/tv_address_des">
+
+            <com.tlh.android.widget.NoPaddingTextView
+                android:id="@+id/tv_dev_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="26px" />
+
+        </ScrollView>
+
+
+        <ListView
+            android:id="@+id/lv_location"
+            android:layout_width="420px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="305px"
+            android:layout_marginTop="90px"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="gone" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_submit"
+        android:layout_width="300px"
+        android:layout_height="100px"
+        android:layout_marginBottom="426px"
+        android:layout_marginRight="47px"
+        android:background="@drawable/sec_btn_theme_bg"
+        android:gravity="center"
+        android:text="激活"
+        android:textColor="@color/tv_theme_color"
+        android:textSize="38px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle='packed'
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tv_back" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_back"
+        android:layout_width="300px"
+        android:layout_height="100px"
+        android:layout_marginBottom="426px"
+        android:background="@drawable/sec_btn_theme_bg"
+        android:gravity="center"
+        android:text="返回"
+        android:textColor="@color/tv_theme_color"
+        android:textSize="38px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle='packed'
+        app:layout_constraintLeft_toRightOf="@id/tv_submit"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

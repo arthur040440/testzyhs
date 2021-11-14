@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="858px"
+    android:layout_height="1170px"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="342px"
+        android:layout_height="396px"
+        android:layout_gravity="center"
+        android:layout_marginTop="99px"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_smile_zyhs" />
+
+    <com.tlh.android.widget.ImageTextButton
+        android:id="@+id/ll_welcome_use"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_logo_top"
+        android:layout_marginLeft="241px"
+        android:layout_marginRight="241px"
+        android:layout_marginTop="123px"
+        android:gravity="center_horizontal"
+        android:text="@string/thank_you_for_your_use"
+        android:textColor="@color/black"
+        android:textSize="40px"
+        custom:leftDrawable="@mipmap/ic_left_fish"
+        custom:rightDrawable="@mipmap/ic_right_fish" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30px"
+        android:textColor="@color/gray_878787"
+        android:gravity="center"
+        android:textSize="32px"
+        android:lineSpacingExtra="10px"
+        android:text="@string/order_no_tip" />
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_no_order_confirm"
+        android:layout_width="734px"
+        android:layout_height="114px"
+        android:layout_gravity="center"
+        android:layout_marginTop="175px"
+        android:background="@drawable/sec_btn_theme_bg"
+        android:gravity="center"
+        android:text="@string/confirm"
+        android:textColor="@color/tv_theme_color"
+        android:textSize="38px" />
+
+</LinearLayout>
+
+

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="858px"
+    android:layout_height="1170px"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="280px"
+    android:layout_marginBottom="467px"
+    android:background="@drawable/dialog_bg">
+
+
+    <com.tlh.android.widget.ImageTextButton
+        android:id="@+id/itb_title_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="141px"
+        android:layout_marginTop="144px"
+        android:layout_marginRight="141px"
+        android:gravity="center"
+        android:text="是否上传清运单"
+        android:textColor="@color/black"
+        android:textSize="38px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:leftDrawable="@mipmap/ic_left_fish"
+        app:rightDrawable="@mipmap/ic_right_fish" />
+
+
+    <ImageView
+        android:id="@+id/iv_image_order"
+        android:layout_width="452px"
+        android:layout_height="342px"
+        android:layout_marginLeft="194px"
+        android:layout_marginTop="132px"
+        android:layout_marginRight="212px"
+        android:src="@mipmap/ic_clear_order"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itb_title_order" />
+
+
+    <TextView
+        android:id="@+id/tv_order_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="118px"
+        android:gravity="center"
+        android:text="@string/clear_qrcode_tips"
+        android:textColor="@color/black"
+        android:textSize="38px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_image_order" />
+
+
+    <TextView
+        android:id="@+id/tv_clear_back"
+        android:layout_width="300px"
+        android:layout_height="100px"
+        android:layout_marginLeft="99px"
+        android:layout_marginBottom="127px"
+        android:background="@drawable/sec_btn_theme_bg"
+        android:gravity="center"
+        android:text="返回"
+        android:textColor="@color/tv_theme_color"
+        android:textSize="38px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_clear_confirm"
+        android:layout_width="300px"
+        android:layout_height="100px"
+        android:layout_marginRight="112px"
+        android:layout_marginBottom="127px"
+        android:background="@drawable/sec_btn_theme_bg"
+        android:gravity="center"
+        android:text="确认"
+        android:textColor="@color/tv_theme_color"
+        android:textSize="38px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+
+</android.support.constraint.ConstraintLayout>

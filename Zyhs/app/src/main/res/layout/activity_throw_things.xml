@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/th_ctl_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_screen_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:layout_marginTop="10px"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_user_logo"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_marginLeft="40px"
+            android:adjustViewBounds="true"
+            android:background="@mipmap/ic_user_fault_logo"
+            android:scaleType="fitXY" />
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="29px"
+            android:text="章鱼游客"
+            android:textColor="@color/nick_color"
+            android:textSize="20px" />
+
+        <ImageView
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="21px"
+            android:background="@mipmap/ic_img_coin" />
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:id="@+id/tv_user_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5px"
+            android:textColor="#FF030000"
+            android:textSize="20px" />
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:id="@+id/time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="40px"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="@color/black"
+            android:textSize="20px"
+            tools:text="15:30:26  周一" />
+    </LinearLayout>
+
+    <include layout="@layout/page_head_logo" />
+
+    <include layout="@layout/page_head_cutdown_time" />
+
+    <com.tlh.android.widget.ImageTextButton
+        android:id="@+id/ll_welcome_use"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_logo_top"
+        android:layout_marginLeft="252px"
+        android:layout_marginTop="250px"
+        android:layout_marginRight="252px"
+        android:gravity="center_horizontal"
+        android:text="@string/please_choose_junk_class"
+        android:textColor="@color/black"
+        android:textSize="38px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        custom:leftDrawable="@mipmap/ic_left_fish"
+        custom:rightDrawable="@mipmap/ic_right_fish" />
+
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/ll_throw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_welcome_use"
+        android:layout_marginTop="366px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        custom:flexDirection="row"
+        custom:flexWrap="wrap">
+
+        <include layout="@layout/throw_ylp_item" />
+
+        <include layout="@layout/throw_bl_item" />
+
+        <include layout="@layout/throw_paper_item" />
+
+        <include layout="@layout/throw_spin_item" />
+
+        <include layout="@layout/throw_metal_item" />
+
+        <include layout="@layout/throw_plastic_item" />
+
+        <include layout="@layout/throw_poison_item" />
+
+        <include layout="@layout/throw_other_item" />
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <include
+        layout="@layout/throw_last_item"
+        android:layout_width="252px"
+        android:layout_height="191px"
+        android:layout_marginRight="110px"
+        android:layout_marginBottom="489px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_finish_throw"
+        android:layout_width="734px"
+        android:layout_height="114px"
+        android:layout_marginBottom="182px"
+        android:background="@drawable/sec_btn_theme_bg"
+        app:cardBackgroundColor="@color/transparent"
+        app:cardCornerRadius="4px"
+        app:cardElevation="6px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:id="@+id/tv_finish_throw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/sec_btn_theme_bg"
+            android:gravity="center"
+            android:text="退出登录"
+            android:textColor="@color/tv_theme_color"
+            android:textSize="38px" />
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="734px"
+        android:layout_height="114px"
+        android:layout_marginBottom="182px"
+        android:background="@drawable/sec_btn_theme_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <com.tlh.android.widget.NoPaddingTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="订单正在处理中"
+            android:textColor="@color/tv_theme_color"
+            android:textSize="38px" />
+
+        <com.tlh.android.widget.CircularLinesProgress
+            android:id="@+id/clp"
+            android:layout_width="88px"
+            android:layout_height="88px"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <com.tlh.android.widget.NoPaddingTextView
+        android:id="@+id/tv_dev_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40px"
+        android:layout_marginBottom="10px"
+        android:maxEms="40"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="20px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:text="NO.ABC_20181024_SP7567 贝利集团" />
+
+</android.support.constraint.ConstraintLayout>
